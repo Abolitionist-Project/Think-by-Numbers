@@ -1,6 +1,3 @@
-Think-by-Numbers
-================
-
 Statistical Reasoning > Irrational Intuition
 
 The Think by Numbers project is the 1st step in the abolition of suffering.
