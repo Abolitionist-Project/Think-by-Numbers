@@ -2,21 +2,18 @@ Statistical Reasoning > Irrational Intuition
 
 The Abolitionist Project has the modest goal of eliminating all unnecessary suffering on earth. It’s done in 3 easy steps!
 
-1. Learn About Problems and Solutions
+LEARN About Problems and Solutions
 
-Everyone should submit an article which attempts to provide quantitative details about what they would consider to be the worst problem in the world. Everyone should also submit their idea for the best a solution to some problem. It doesn't have to be an original idea, just what you think the best one is.
+Problems: Please submit an article which provides a quantitative examination of a problem that you would consider to cause the greatest suffering. 
 
-2. Decide
+Solutions: After reading about a Problem, you should also submit a solution to that problem.  The solution need not be original, just whatever you think would be most effective.  After publishing, your Solution will be listed below the problem article. 
 
-Decide which problems cause the most suffering and which solutions are most cost effective. This was not previously something that could be quantified. However, crowd-sourcing which could be used to facilitate this. 
+DECIDE Which Solution is Most Cost-Effective
 
-Cost-effectiveness calculations
-In each Problem post, readers may submit their estimations of the magnitude of the suffering (either using a dollar figure or a unit of pleasure called a util or hedon) caused by each major world problem. All submissions are then averaged and problems are ranked according to the degree of suffering caused by each.
+Estimating the Cost of Problems: After reading about a Problem, you should allocate some fraction of your taxes to solving this problem. This figure should based your estimation of the magnitude of the suffering caused by that problem relative to all others you've read about. An increase or decrease in allocation towards one problem will result in a proportional increase or decrease in their previous allocations to any other problems.  Averaging all user tax allocations will provide a quantitative estimate of magnitude of the suffering. 
 
-Users can also submit ideas for possible solutions. Then everyone can submit their estimates on how much each solution will cost and how much suffering it will reduce. Then the amount of suffering eliminated divided by the cost of the solution will give you a value representative of the cost-effectiveness of that solution. This step is known as the Crowdsourcing Utopia Project.
+Estimating the Cost of Solutions: After reading about a solution, you should submit your guess as to how much that solution will cost to fully implement. The average estimated suffering caused by the problem divided by the average estimated cost of the solution will give you a value representative of the cost-effectiveness of that solution. 
 
-3. Act
+ACT to Reduce Suffering
 
-In the final step, a charitable foundation will acquire and direct resources towards realizing the most cost effective solutions. This might be called the Charitable Foundation for the Abolition of Suffering. It is hoped that this will take over many functions that government is currently supposed to be fulfilling, but is not due to incompetence and/or corruption.
-
- 
+In the final step, a charitable foundation will acquire and direct resources towards realizing the most cost effective solutions. 
