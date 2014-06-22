@@ -3,11 +3,9 @@ Think-by-Numbers
 
 Statistical Reasoning > Irrational Intuition
 
-The Think by Numbers project is the 1st step in the Abolition of Suffering.
+The Think by Numbers project is the 1st step in the abolition of suffering.
 
-The Abolitionist Project has the modest goal of eliminating all unnecessary suffering on earth. It’s done in three easy steps!
-
-These 3 steps are:
+The Abolitionist Project has the modest goal of eliminating all unnecessary suffering on earth. It’s done in 3 easy steps!
 
 1. Learn
 
