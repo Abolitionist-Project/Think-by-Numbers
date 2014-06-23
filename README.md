@@ -14,4 +14,4 @@ Estimating the Cost of Solutions: After reading about a solution, you should sub
 
 STEP 3: ACT to Reduce Suffering
 
-In the final step, a charitable foundation will accept and direct resources to the most cost effective solutions. 
+In the final step, join a community with the shared goal of realizing what you consider the most cost-effective solution. Then, make it happen!
