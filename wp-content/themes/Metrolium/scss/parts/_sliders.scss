@@ -1,0 +1,70 @@
+/****************************************************
+* Direction Nav
+****************************************************/
+.flex-direction-nav {
+
+	li {
+
+		a {
+			@include opacity(0.5);
+			@include icon_style(40px);
+			background-color: rgba(0,0,0,0.75);
+			color: #FFF !important;
+			position: absolute;
+			bottom: $margin;
+
+			&.flex-next {
+				right: $margin;
+			}
+
+			&.flex-prev {
+				left: $margin;
+			}
+
+			&:hover {
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+/****************************************************
+* Thumbnail Nav
+****************************************************/
+.flex-thumbnail-nav {
+	@include clearfix;
+	margin-top: $margin;
+
+	li {
+
+		float: left;
+		margin-right: $margin;
+		cursor: pointer;
+
+		img {
+			@include transition(transform 0.25s, opacity 0.25s);
+			@include scale(0.9);
+			@include opacity(0.5);
+			display: block;
+			width: 50px;
+
+			@include min-screen-width(tablet-portrait) {
+				width: 75px;
+			}
+		}
+
+		&:hover {
+			img {
+				@include scale(1);
+				@include opacity(1);
+			}
+		}
+
+		&.flex-active {
+			img {
+				@include scale(1);
+				@include opacity(1);
+			}
+		}
+	}
+}

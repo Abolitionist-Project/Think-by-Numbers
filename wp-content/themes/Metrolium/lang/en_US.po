@@ -1,0 +1,1028 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Metrolium\n"
+"POT-Creation-Date: 2013-08-14 16:47-0000\n"
+"PO-Revision-Date: 2013-08-14 16:47-0000\n"
+"Last-Translator: Matthew Booth <matt@boov.co.uk>\n"
+"Language-Team: Euged\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:8 ../backend/breadcrumbs.php:17
+msgid "Error 404"
+msgstr ""
+
+#: ../404.php:9
+msgid "It appears this page cannot be found"
+msgstr ""
+
+#: ../404.php:10
+msgid ""
+"Unfortunatly the page you are looking for has either moved location or been "
+"removed all together."
+msgstr ""
+
+#: ../404.php:11
+msgid "You can try searching for it below using the form."
+msgstr ""
+
+#: ../404.php:18
+msgid "Return home"
+msgstr ""
+
+#: ../archive-portfolio.php:16 ../backend/shortcodes.php:1241
+msgid "No projects to display"
+msgstr ""
+
+#: ../comments.php:23
+msgid "This comment is awaiting approval"
+msgstr ""
+
+#: ../comments.php:39
+msgid "This post is password protected. Enter the password to view comments"
+msgstr ""
+
+#: ../comments.php:43
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:43 ../includes/post-formats/format-audio.php:46
+#: ../includes/post-formats/format-gallery.php:45
+#: ../includes/post-formats/format-image.php:26
+#: ../includes/post-formats/format-link.php:51
+#: ../includes/post-formats/format-quote.php:64
+#: ../includes/post-formats/format-standard.php:30
+#: ../includes/post-formats/format-video.php:50
+msgid "One Comment"
+msgstr ""
+
+#: ../comments.php:43 ../includes/post-formats/format-audio.php:46
+#: ../includes/post-formats/format-gallery.php:45
+#: ../includes/post-formats/format-image.php:26
+#: ../includes/post-formats/format-link.php:51
+#: ../includes/post-formats/format-quote.php:64
+#: ../includes/post-formats/format-standard.php:30
+#: ../includes/post-formats/format-video.php:50
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Comments are closed"
+msgstr ""
+
+#: ../footer.php:36
+msgid "Find us elsewhere"
+msgstr ""
+
+#: ../functions.php:238
+msgid "Clear"
+msgstr ""
+
+#: ../functions.php:239
+msgid "Default"
+msgstr ""
+
+#: ../functions.php:240
+msgid "Select Color"
+msgstr ""
+
+#: ../functions.php:275 ../includes/custom-post-types/config.php:264
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:285
+msgid "Pre-Footer"
+msgstr ""
+
+#: ../functions.php:295
+msgid "Infobar"
+msgstr ""
+
+#: ../functions.php:305
+msgid "Footer #1"
+msgstr ""
+
+#: ../functions.php:315
+msgid "Footer #2"
+msgstr ""
+
+#: ../functions.php:325
+msgid "Footer #3"
+msgstr ""
+
+#: ../functions.php:335
+msgid "Footer #4"
+msgstr ""
+
+#: ../functions.php:436
+msgid "Search Results"
+msgstr ""
+
+#: ../functions.php:440
+msgid "Author Archive"
+msgstr ""
+
+#: ../functions.php:455
+msgid "Results for the term"
+msgstr ""
+
+#: ../functions.php:456
+msgid "Category Archive"
+msgstr ""
+
+#: ../functions.php:457
+msgid "Tag Archive"
+msgstr ""
+
+#: ../functions.php:458
+msgid "Date Archive"
+msgstr ""
+
+#: ../functions.php:462
+msgid "Post Format Archive"
+msgstr ""
+
+#: ../header.php:93
+msgid "Hide Menu"
+msgstr ""
+
+#: ../header.php:93
+msgid "Show Menu"
+msgstr ""
+
+#: ../single.php:34
+#, php-format
+msgid "Posted on %s at %s"
+msgstr ""
+
+#: ../single.php:44
+msgid "Pages:"
+msgstr ""
+
+#: ../backend/breadcrumbs.php:11
+msgid "Home"
+msgstr ""
+
+#: ../backend/breadcrumbs.php:12
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: ../backend/breadcrumbs.php:13
+#, php-format
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: ../backend/breadcrumbs.php:14
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: ../backend/breadcrumbs.php:15
+#, php-format
+msgid "%s Post Format Archive"
+msgstr ""
+
+#: ../backend/breadcrumbs.php:16
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: ../backend/breadcrumbs.php:171
+msgid "Page"
+msgstr ""
+
+#: ../backend/helpers.php:15
+msgid "year"
+msgstr ""
+
+#: ../backend/helpers.php:16
+msgid "month"
+msgstr ""
+
+#: ../backend/helpers.php:17
+msgid "week"
+msgstr ""
+
+#: ../backend/helpers.php:18
+msgid "day"
+msgstr ""
+
+#: ../backend/helpers.php:19
+msgid "hour"
+msgstr ""
+
+#: ../backend/helpers.php:20
+msgid "minute"
+msgstr ""
+
+#: ../backend/helpers.php:21
+msgid "second"
+msgstr ""
+
+#: ../backend/shortcodes.php:524 ../includes/blog/blog-masonry.php:21
+#: ../includes/blog/blog-traditional.php:32
+msgid "No posts to display"
+msgstr ""
+
+#: ../backend/cuztom/cuztom.php:217
+#: ../backend/cuztom/classes/fields/image.class.php:29
+msgid "Remove current image"
+msgstr ""
+
+#: ../backend/cuztom/cuztom.php:218
+#: ../backend/cuztom/classes/fields/file.class.php:35
+msgid "Remove current file"
+msgstr ""
+
+#: ../backend/cuztom/classes/cuztom.class.php:157
+msgid "Use of a reserved term."
+msgstr ""
+
+#: ../backend/cuztom/classes/field.class.php:159
+msgid "Save"
+msgstr ""
+
+#: ../backend/cuztom/classes/meta.class.php:96
+#: ../backend/cuztom/classes/fields/bundle.class.php:24
+#: ../backend/cuztom/classes/fields/tab.class.php:37
+msgid "Add"
+msgstr ""
+
+#: ../backend/cuztom/classes/meta_box.class.php:160
+#: ../backend/cuztom/classes/taxonomy.class.php:176
+#: ../includes/portfolio/single-half.php:103
+#: ../includes/portfolio/single-wide.php:103
+msgid "Date"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:75
+#, php-format
+msgctxt "post type general name"
+msgid "%s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:76
+#, php-format
+msgctxt "post type singular title"
+msgid "%s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:77
+#: ../backend/cuztom/classes/post_type.class.php:96
+#: ../backend/cuztom/classes/taxonomy.class.php:110
+#: ../backend/cuztom/classes/taxonomy.class.php:118
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:78
+#: ../backend/cuztom/classes/taxonomy.class.php:103
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:79
+msgctxt "%s"
+msgid "Add New"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:80
+#: ../backend/cuztom/classes/taxonomy.class.php:108
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:81
+#: ../backend/cuztom/classes/taxonomy.class.php:106
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:82
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:83
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:84
+#, php-format
+msgid "%s Archive"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:85
+#: ../backend/cuztom/classes/taxonomy.class.php:102
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:86
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:87
+#, php-format
+msgid "No %s found in trash"
+msgstr ""
+
+#: ../backend/cuztom/classes/post_type.class.php:88
+#, php-format
+msgid "%s Parent"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:100
+#, php-format
+msgctxt "taxonomy general name"
+msgid "%s"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:101
+#, php-format
+msgctxt "taxonomy singular name"
+msgid "%s"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:104
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:105
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:107
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:109
+#, php-format
+msgid "New %s Name"
+msgstr ""
+
+#: ../backend/cuztom/classes/taxonomy.class.php:233
+#, php-format
+msgid "Show all %s"
+msgstr ""
+
+#: ../backend/cuztom/classes/fields/bundle.class.php:59
+#: ../backend/cuztom/classes/fields/bundle.class.php:106
+msgid "This input type doesn't support the bundle functionality (yet)."
+msgstr ""
+
+#: ../backend/cuztom/classes/fields/file.class.php:34
+msgid "Select file"
+msgstr ""
+
+#: ../backend/cuztom/classes/fields/image.class.php:28
+msgid "Select image"
+msgstr ""
+
+#: ../backend/cuztom/classes/fields/yesno.class.php:15
+msgid "Yes"
+msgstr ""
+
+#: ../backend/cuztom/classes/fields/yesno.class.php:18
+msgid "No"
+msgstr ""
+
+#: ../backend/widgets/browse-blog.php:14
+msgid "widget_browse_blog"
+msgstr ""
+
+#: ../backend/widgets/browse-blog.php:15
+msgid ""
+"Display link to the next and previous blog posts. (only works within the "
+"blog sidebar)"
+msgstr ""
+
+#: ../backend/widgets/browse-blog.php:85
+msgid "<i class=\"icon-arrow-left\"></i> Previous"
+msgstr ""
+
+#: ../backend/widgets/browse-blog.php:86
+msgid "Next <i class=\"icon-arrow-right\"></i>"
+msgstr ""
+
+#: ../backend/widgets/browse-blog.php:90
+msgid "Random <i class=\"icon-random\"></i>"
+msgstr ""
+
+#: ../backend/widgets/photo-stream.php:16
+msgid "widget_photo_stream"
+msgstr ""
+
+#: ../backend/widgets/photo-stream.php:17
+msgid "Display photos from a variety of online hosted solutions."
+msgstr ""
+
+#: ../backend/widgets/post-format-archives.php:14
+msgid "widget_post_format_archive"
+msgstr ""
+
+#: ../backend/widgets/post-format-archives.php:15
+msgid "Display links to the various post format archives"
+msgstr ""
+
+#: ../backend/widgets/recent-posts.php:42
+msgid "widget_euged_recent_posts"
+msgstr ""
+
+#: ../backend/widgets/recent-posts.php:43
+msgid ""
+"Display your recent entries, optionally from a specific post format and/or "
+"category."
+msgstr ""
+
+#: ../backend/widgets/social-icons.php:40
+msgid "widget_social_icons"
+msgstr ""
+
+#: ../backend/widgets/social-icons.php:41
+msgid ""
+"A simple yet beautiful widget for displaying your social profiles as icons."
+msgstr ""
+
+#: ../backend/widgets/twitter-feed.php:27
+msgid "widget_twitter_feed"
+msgstr ""
+
+#: ../backend/widgets/twitter-feed.php:28
+msgid "Show your most recent tweets."
+msgstr ""
+
+#: ../backend/widgets/twitter-feed.php:44
+#: ../backend/widgets/twitter-feed.php:151
+msgid "CURL extension not found. You need enable it to use this Widget"
+msgstr ""
+
+#: ../backend/widgets/twitter-feed.php:213
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../backend/widgets/twitter-feed.php:219
+msgid ""
+"An error has occured fetching your tweets, please double check all widget "
+"settings"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:178
+#: ../includes/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:179
+#: ../includes/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:517
+#: ../includes/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1544
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../includes/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1956
+#: ../includes/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1956
+#: ../includes/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../includes/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../includes/portfolio-filter.php:9
+msgid "All"
+msgstr ""
+
+#: ../includes/blog/blog-masonry.php:44
+#: ../includes/blog/blog-traditional.php:47
+msgid "<div class=\"icon icon-chevron-left\"></div>"
+msgstr ""
+
+#: ../includes/blog/blog-masonry.php:45
+#: ../includes/blog/blog-traditional.php:48
+msgid "<div class=\"icon icon-chevron-right\"></div>"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:23
+msgctxt "post type singular name"
+msgid "Project"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:24
+msgctxt "portfolio"
+msgid "Add New"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:25
+msgid "Add New Project"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:26
+msgid "Edit Project"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:27
+msgid "New Project"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:28
+msgid "All Projects"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:29
+msgid "View Project"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:30
+msgid "Search Projects"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:31
+msgid "No project found"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:32
+msgid "No projects found in trash"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:33
+msgid "Portfolio"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:43
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:44
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:45
+msgid "Search Categories"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:46
+msgid "All Categories"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:47
+msgid "Parent Category"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:48
+msgid "Parent Category:"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:49
+msgid "Edit Category"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:50
+msgid "Update Category"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:51
+msgid "Add New Category"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:52
+msgid "New Category Name"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:53
+msgid "Categories"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:60
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:64
+msgid "Portfolio Style"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:74
+msgid "Show Other Projects"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:80
+msgid "Other Projects Order"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:92
+msgid "Show X Projects"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:106
+msgid "Project Details"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:110
+msgid "Show Project Details"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:116
+msgid "Project URL"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:121
+msgid "Client Name"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:126
+msgid "Client URL"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:134
+#: ../includes/portfolio/single-half.php:81
+#: ../includes/portfolio/single-wide.php:81
+msgid "Testimonial"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:138
+msgid "Show Testimonial"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:143
+#: ../includes/custom-post-types/config.php:402
+msgid "Author"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:148
+msgid "Role"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:153
+#: ../includes/custom-post-types/config.php:396
+msgid "Content"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:162
+#: ../includes/custom-post-types/config.php:254
+msgid "Page Options"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:166
+#: ../includes/custom-post-types/config.php:258
+msgid "Show Breadcrumbs"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:172
+#: ../includes/custom-post-types/config.php:281
+msgid "Title Bar Style"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:183
+#: ../includes/custom-post-types/config.php:292
+msgid "Breadcrumbs Position"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:193
+#: ../includes/custom-post-types/config.php:302
+msgid "Slider Shortcode"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:198
+#: ../includes/custom-post-types/config.php:307
+msgid "Title Bar Text Align"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:208
+#: ../includes/custom-post-types/config.php:317
+msgid "Show Sub Title"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:213
+#: ../includes/custom-post-types/config.php:322
+msgid "Sub Title"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:218
+#: ../includes/custom-post-types/config.php:327
+msgid "Title Bar CTA"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:223
+#: ../includes/custom-post-types/config.php:332
+msgid "Title Bar CTA Link"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:228
+#: ../includes/custom-post-types/config.php:337
+msgid "Title Bar CTA Text"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:271
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:353
+msgid "Audio Settings"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:357
+#: ../includes/custom-post-types/config.php:414
+msgid "Embed Code"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:366
+msgid "Link Settings"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:370
+msgid "Title"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:375
+#: ../includes/portfolio/single-half.php:123
+#: ../includes/portfolio/single-wide.php:123
+msgid "URL"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:380
+msgid "Target"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:392
+msgid "Quote Settings"
+msgstr ""
+
+#: ../includes/custom-post-types/config.php:410
+msgid "Video Settings"
+msgstr ""
+
+#: ../includes/portfolio/archive-1c.php:48
+msgid "View project"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:68
+#: ../includes/portfolio/single-wide.php:68
+msgid "Description"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:99
+#: ../includes/portfolio/single-wide.php:99
+msgid "Details"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:107
+#: ../includes/portfolio/single-wide.php:107
+msgid "Client"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:112
+#: ../includes/portfolio/single-wide.php:112
+msgid "Category"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:124
+#: ../includes/portfolio/single-wide.php:124
+msgid "Launch site"
+msgstr ""
+
+#: ../includes/portfolio/single-half.php:141
+#: ../includes/portfolio/single-wide.php:141
+msgid "Other Projects"
+msgstr ""
+
+#: ../includes/post-formats/format-audio.php:12
+#: ../includes/post-formats/format-audio.php:28
+msgid "No audio embed code detected"
+msgstr ""
+
+#: ../includes/post-formats/format-audio.php:44
+#: ../includes/post-formats/format-gallery.php:43
+#: ../includes/post-formats/format-image.php:24
+#: ../includes/post-formats/format-link.php:49
+#: ../includes/post-formats/format-quote.php:62
+#: ../includes/post-formats/format-standard.php:28
+#: ../includes/post-formats/format-video.php:48
+msgid "Read more"
+msgstr ""
+
+#: ../includes/post-formats/format-audio.php:46
+#: ../includes/post-formats/format-gallery.php:45
+#: ../includes/post-formats/format-image.php:26
+#: ../includes/post-formats/format-link.php:51
+#: ../includes/post-formats/format-quote.php:64
+#: ../includes/post-formats/format-standard.php:30
+#: ../includes/post-formats/format-video.php:50
+msgid "Leave a comment"
+msgstr ""
+
+#: ../includes/post-formats/format-gallery.php:26
+msgid "No image attachements in this post found"
+msgstr ""
+
+#: ../includes/post-formats/format-link.php:15
+#: ../includes/post-formats/format-link.php:35
+msgid "Missing either link title, link URL or both"
+msgstr ""
+
+#: ../includes/post-formats/format-quote.php:22
+#: ../includes/post-formats/format-quote.php:48
+msgid "Missing either quote content, quote author or both"
+msgstr ""
+
+#: ../includes/post-formats/format-video.php:13
+#: ../includes/post-formats/format-video.php:31
+msgid "No video embed code detected"
+msgstr ""

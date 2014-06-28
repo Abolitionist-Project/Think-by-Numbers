@@ -1,0 +1,108 @@
+@mixin min-screen-width($media) {
+	@if $media == mobile-landscape {
+		@media only screen and (min-width:480px) { @content; }
+	}
+	@else if $media == tablet-portrait {
+		@media only screen and (min-width:768px) { @content; }
+	}
+	@else if $media == tablet-landscape {
+		@media only screen and (min-width:1024px) { @content; }
+	}
+	@else if $media == large-desktop {
+		@media only screen and (min-width:1200px) { @content; }
+	}
+}
+
+@mixin clearfix() {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin tag_style() {
+	@include border-radius(20px 3px 3px 20px);
+	font-size: 10px;
+	float: left;
+	position: relative;
+	margin: 0 7px 7px 0;
+	color: $list-tags-li-text-colour;
+	background-color: $list-tags-li-background-colour;
+	line-height: 1em;
+	padding: 6px;
+	padding-left: 20px;
+	font-size: 10px !important;
+	text-transform: uppercase;
+
+	a {
+		color: $list-tags-li-text-colour;
+	}
+
+	&:before {
+		@include border-radius(3px);
+		display: block;
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		left: 8px;
+		top: 8px;
+	}
+}
+
+@mixin menu_style() {
+	list-style: none;
+	margin-bottom: 0;
+
+	li {
+		margin-bottom: 1px;
+
+
+		a {
+			padding: 8px;
+			display: block;
+			background: #f7f7f7;
+			line-height: 1em;
+
+			&:hover {
+				
+			}
+		}
+
+		ul {
+			font-size: 0.923em;
+			border: none;
+
+			li {
+				
+				a {
+					background: transparent;
+					&:hover {
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin blockquote_style() {
+	font-size: 1.154em;
+	text-align: center;
+	line-height: $site-line-height;
+}
+
+@mixin icon_style($size) {
+	display: block;
+	text-align: center;
+	width: $size;
+	line-height: $size;
+}

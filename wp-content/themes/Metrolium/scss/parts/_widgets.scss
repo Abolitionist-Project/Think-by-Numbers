@@ -1,0 +1,448 @@
+/****************************************************
+* Widgets
+****************************************************/
+.widget {
+	margin-bottom: $gutter;
+	clear: both;
+}
+
+#content {
+	#sidebar {
+		.widget {
+			padding-bottom: $gutter;
+			border-bottom: 1px solid $hr-line-colour;
+		}
+	}
+}
+
+
+
+/****************************************************
+* Browse Blog
+****************************************************/
+.widget_browse_blog {
+
+	.blog-navigation {
+		margin-bottom: 10px;
+		width: 100%;
+		border-spacing: 1px;
+		border-collapse: separate;
+
+		td {
+			border: none;
+		}
+
+		a {
+			display: block;
+			padding: 10px;
+			color: #808080;
+		}
+
+		.previous {
+			width: 50%;
+			text-align: left;
+			background-color: #f2f2f2;
+		}
+
+		.next {
+			width: 50%;
+			text-align: right;
+			background-color: #f2f2f2;
+		}
+	}
+
+	.random {
+		text-align: right;
+		margin: 0;
+	}
+}
+
+
+/****************************************************
+* Search
+****************************************************/
+.widget_search {
+	form {
+		@include clearfix;
+		padding-right: 55px;
+		position: relative;
+
+		button {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50px;
+		}
+	}
+}
+
+
+/****************************************************
+* Meta
+****************************************************/
+.widget_meta {
+
+	ul {
+		padding-left: 25px;
+	}
+}
+
+
+/****************************************************
+* Post Format Archive
+****************************************************/
+.widget_post_format_archive {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: 1px;
+			position: relative;
+			padding: 3px 35px 3px 5px;
+
+			.post-format-icon {
+				margin-right: 7px;
+			}
+
+			.post-count {
+				@include icon_style(25px);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+			}
+
+			.post-count {
+				right: 0;
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Recent Tweets
+****************************************************/
+.widget_twitter_feed {
+
+	.tweet {
+		background: {
+			image: url("../images/tweet_background.png");
+			repeat: no-repeat;
+			position: bottom left;
+			size: 66px;
+		}
+		padding: 12px 15px;
+		margin-bottom: $margin;
+
+		.content {
+			margin-bottom: 0;
+		}
+
+		.meta {
+			text-align: right;
+			font-size: 11px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+/****************************************************
+* Recent Posts
+****************************************************/
+.widget_recent_entries {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: $margin/2;
+			line-height: $site-line-height;
+
+			.post-date {
+				display: block;
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Recent Comments
+****************************************************/
+.widget_recent_comments {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: $margin/2;
+			line-height: $site-line-height;
+		}
+	}
+}
+
+
+/****************************************************
+* Categories
+****************************************************/
+.widget_categories {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: 1px;
+			position: relative;
+			padding: 3px 35px 3px 0;
+
+			.post-count {
+				@include icon_style(25px);
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Archives
+****************************************************/
+.widget_archive {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: 1px;
+			position: relative;
+			padding: 3px 35px 3px 0;
+
+			.post-count {
+				@include icon_style(25px);
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Photo Stream
+****************************************************/
+.widget_photo_stream {
+	@include clearfix;
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			float: left;
+			margin: 0 10px 10px 0;
+			overflow: hidden;
+
+			a {
+				display: block;
+				background: $accent;
+
+				img {
+					display: block;
+					max-width: 50px;
+					max-height: 50px;
+				}
+
+				&:hover {
+					img {
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* RSS
+****************************************************/
+.widget_rss {
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: $margin/2;
+			line-height: $site-line-height;
+
+			.rss-date {
+				display: block;
+				font-size: 11px;
+				margin-bottom: 10px;
+			}
+
+			.rssSummary {
+				margin-bottom: 10px;
+			}
+
+			cite {
+				display: block;
+				text-align: right;
+				font-style: italic;
+
+				&:before { content: '\2014 '; }
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Calendar
+****************************************************/
+.widget_calendar {
+
+	table {
+
+		caption {
+			padding: 3px 0;
+		}
+
+		thead {
+			th {
+				text-align: center;
+				padding: 3px;
+				border: none;
+			}
+		}
+
+		tbody {
+			td {
+				text-align: center;
+				padding: 3px;
+				border: none;
+			}
+		}
+
+		tfoot {
+			td {
+				padding: 3px;
+				border: none;
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Tag Cloud
+****************************************************/
+.widget_tag_cloud {
+	.tagcloud {
+		@include clearfix;
+
+		a {
+			@include tag_style()
+		}
+	}
+}
+
+
+/****************************************************
+* Pages
+****************************************************/
+.widget_pages {
+	ul {
+		@include menu_style();
+	}
+}
+
+
+/****************************************************
+* Custom Menu
+****************************************************/
+.widget_nav_menu {
+	ul {
+		@include menu_style();
+	}
+}
+
+
+/****************************************************
+* Social Icons
+****************************************************/
+.widget_social_icons {
+	ul {
+		@include clearfix;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			float: left;
+			margin: 0 1px 1px 0;
+		}
+	}
+}
+
+
+/****************************************************
+* Euged Recent Posts
+****************************************************/
+.widget_euged_recent_posts {
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			margin-bottom: $margin/2;
+			line-height: $site-line-height;
+			position: relative;
+
+			&.has-thumbnail {
+				min-height: 40px;
+				padding-left: 55px;
+			}
+
+			.thumbnail {
+				position: absolute;
+				left: 0;
+				top: 0;
+
+				i {
+					@include icon_style(40px);
+					background-color: #f2f2f2;
+					color: #999;
+
+					&:hover {
+						background-color: darken(#f2f2f2,5%);
+					}
+				}
+
+				img {
+					max-width: 40px;
+					display: block
+				}
+			}
+
+			.post-date {
+				display: block;
+				font-size: 11px;
+			}
+		}
+	}
+}

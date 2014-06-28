@@ -1,0 +1,120 @@
+@mixin min-screen-width($media) {
+	@if $media == mobile-landscape {
+		@media only screen and (min-width:480px) { @content; }
+	}
+	@else if $media == tablet-portrait {
+		@media only screen and (min-width:768px) { @content; }
+	}
+	@else if $media == tablet-landscape {
+		@media only screen and (min-width:1024px) { @content; }
+	}
+	@else if $media == large-desktop {
+		@media only screen and (min-width:1200px) { @content; }
+	}
+}
+
+@mixin clearfix() {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin tag_style() {
+	@include border-radius(20px 3px 3px 20px);
+	font-size: 10px;
+	float: left;
+	position: relative;
+	margin: 0 7px 7px 0;
+	color: $list-tags-li-text-colour;
+	background-color: $list-tags-li-background-colour;
+	line-height: 1em;
+	padding: 6px;
+	padding-left: 20px;
+	font-size: 10px !important;
+	text-transform: uppercase;
+
+	a {
+		color: $list-tags-li-text-colour;
+	}
+
+	&:before {
+		@include border-radius(3px);
+		background-color: #FFF;
+		display: block;
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		left: 8px;
+		top: 8px;
+	}
+}
+
+@mixin menu_style() {
+	list-style: none;
+	margin-bottom: 0;
+
+	li {
+
+		a {
+			display: block;
+			padding: 8px 3px;
+			line-height: 1em;
+
+			&:hover {
+				padding-left: 8px;
+				background-color: rgba(0,0,0,0.05);
+			}
+		}
+
+		&.current-menu-item,
+		&.current_page_item {
+
+			> a {
+				padding-left: 8px;
+				background-color: rgba(0,0,0,0.05);
+			}
+			
+		}
+
+		ul {
+			padding-left: 15px;
+
+			li {
+				
+				a {
+					color: inherit !important;
+					padding: 6px 3px;
+
+					&:before {
+						font-family: 'FontAwesome';
+						content: "\f0da";
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin blockquote_style() {
+	font-size: 1.154em;
+	text-align: center;
+	line-height: $site-line-height;
+}
+
+@mixin icon_style($size) {
+	display: block;
+	text-align: center;
+	width: $size;
+	line-height: $size;
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/****************************************************
+* Variables
+****************************************************/
+
+// Basic
+$site-width: 600px;
+$gutter: 50px;
+$margin: 25px;
+$accent: #29bdca;
+$site-text-colour: #808080;
+$copy-font: 'Open Sans';
+$detail-font: 'Raleway';
+$border: 1px;
+$body-background-colour: #f2f2f2;
+$site-text-size: 13px;
+$site-line-height: 160%;
+
+// Headings
+$heading-text-colour: #404040;
+$heading-h1-text-size: 80px;
+$heading-h2-text-size: 30px;
+$heading-h3-text-size: 25px;
+$heading-h4-text-size: 20px;
+$heading-h5-text-size: 18px;
+$heading-h6-text-size: 16px;
+
+
+/****************************************************
+* Global
+****************************************************/
+
+// List - Tags
+$list-tags-li-text-colour: #808080;
+$list-tags-li-background-colour: #e6e6e6;
+
+// DL - Tabular
+$dl-tabular-border-left-colour: #dfdfdf;
+
+// Social Icons
+$social-icon-text-colour: #808080;
+$social-icon-background-colour: #e6e6e6;
+
+// List - Links
+$list-links-li-background-colour: #F00;
+
+
+/****************************************************
+* Forms
+****************************************************/
+
+// Inputs
+$form-input-background-colour: #FFF;
+$form-input-text-colour: #808080;
+$form-label-text-colour: #404040;
+
+// Buttons
+$button-default-background-colour: $accent;
+$button-default-text-colour: #FFF;
+$button-light-background-colour: #e6e6e6;
+$button-light-text-colour: #808080;
+$button-dark-background-colour: #444;
+$button-dark-text-colour: #FFF;
+
+
+/****************************************************
+* Shortcodes
+****************************************************/
+
+// Accordion
+$accordion-bar-text-colour: $accent;
+$accordion-bar-background-colour: #f2f2f2;
+$accordion-icon-text-colour: $site-text-colour;
+$accordion-icon-background-colour: #e6e6e6;
+
+// Box
+$box-background-colour: #f2f2f2;
+
+// Code
+$code-background-colour: #f2f2f2;
+
+// Horizontal Rules
+$hr-line-colour: rgba(0,0,0,0.1);
+
+// Notices
+$notice-default-background-colour: #f2f2f2;
+$notice-default-text-colour: #808080;
+$notice-error-background-colour: #F5DBDA;
+$notice-error-text-colour: darken(#F5DBDA,40%);
+$notice-success-background-colour: #D9F098;
+$notice-success-text-colour: darken(#D9F098,43%);
+$notice-warning-background-colour: #FDEFBE;
+$notice-warning-text-colour: darken(#FDEFBE,45%);
+
+// Blockquotes
+$testimonial-avatar-size: 60px;
+$testimonial-author-text-colour: #404040;
+
+// Profile
+$profile-background-colour: #FFF;
+$profile-border-colour: #f2f2f2;
+
+// Teaser
+$teaser-background-colour: #FFF;
+$teaser-border-colour: #f2f2f2;
+
+// Callout
+$callout-background-colour: #f2f2f2;
+
+// Tabs
+$tabs-background-colour: #f2f2f2;
+
+// Setup
+@import "compass/css3";
+
+// Functionality
+@import "libs/mixins";
+@import "libs/functions";
+
+// Libs
+@import "libs/reset";
+@import "libs/normalize";
+@import "libs/formalize";
+@import "libs/grid";
+
+// Parts
+@import "parts/elements";
+@import "parts/forms";
+@import "parts/style";

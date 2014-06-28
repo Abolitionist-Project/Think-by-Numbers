@@ -1,0 +1,17 @@
+
+.oauth_providers a:hover {
+	text-decoration: none;
+}
+
+.oauth_providers a{
+	text-decoration: none;
+	border: 0px !important; 
+}
+
+input{
+	padding:0px; margin-top:5px;
+}
+
+.modal{
+	width:420px;
+}

@@ -1,0 +1,1698 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+
+	<title>Documentation</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="shortcut icon" href="http://localhost/latest/wp-content/themes/euged/icons/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/libs/iconfont.css">
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/fitvids.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$(".typography").fitVids();
+	});
+	</script>
+
+</head>
+
+<body>
+
+	<!--
+	<figure>
+		<img src="assets/images/video_placeholder.jpg">
+		<figcaption>A video showing how to do something</figcaption>
+	</figure>
+	-->
+
+	<nav id="navigation">
+		<div class="band">
+			<div class="inner">
+				<a href="#" id="trigger">View Contents <i class="icon-chevron-down"></i></a>
+				<ul id="contents" class="hidden">
+					<li class="has-submenu">
+						<a href="#sec-started">Getting Started <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-zip-contents">.ZIP Contents &amp; Folder Structure</a></li>
+							<li><a href="#sec-theme-requirements">Theme Requirements</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="#sec-installation">Installation &amp; Setup <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-install-wordpress">Installing WordPress</a></li>
+							<li class="has-submenu">
+								<a href="#sec-install-metrolium">Installing Metrolium <i class="icon-caret-down"></i></a>
+								<ul>
+									<li><a href="#sec-install-method1">Method 1 — Envato Automatic Installation</a></li>
+									<li><a href="#sec-install-method2">Method 2 — Upload Tool</a></li>
+									<li><a href="#sec-install-method3">Method 3 — FTP Upload</a></li>
+
+								</ul>
+							</li>
+							<li><a href="#sec-folder-permissions">File &amp; Folder Permissions</a></li>
+							<li><a href="#sec-child-theme">Child Theme</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="#sec-configure-theme">Configuring Theme Options <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-suggested-plugins">Suggested Plugins</a></li>
+							<li><a href="#sec-global-settings">Global Settings</a></li>
+							<li><a href="#sec-colors-style">Colors &amp; Styling</a></li>
+							<li><a href="#sec-example-data">Example .XML Data</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#sec-navigation-menus">Navigation &amp; Menus</i></a>
+					</li>
+					<li class="has-submenu">
+						<a href="#sec-configuring-content">Configuring Content Options <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-breadcrumbs">Breadcrumbs</a></li>
+							<li><a href="#sec-sidebars">Sidebars</a></li>
+							<li><a href="#sec-title-bar">Title Bar</a></li>
+							<li><a href="#sec-post-formats">Post Formats</a></li>
+							<li><a href="#sec-portfolio">Portfolio</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="#sec-shortcodes">Shortcodes <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-example-templates">Example Templates</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="#sec-sliders">Sliders <i class="icon-caret-down"></i></a>
+						<ul>
+							<li><a href="#sec-layerslider">LayerSlider</a></li>
+							<li><a href="#sec-slider-revolution">Slider Revolution</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#sec-updating-metrolium">Updating Metrolium</a>
+					</li>
+					<li>
+						<a href="#sec-shortcode-reference">Shortcode Reference</a>
+					</li>
+					<li>
+						<a href="#sec-sources-credits">Sources &amp; Credits</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="intro">
+
+		<div class="band padded">
+			<div class="inner">
+
+				<h1>Metrolium<sup>v1.2</sup></h1>
+				<h4 id="sec-">WordPress Theme Documentation</h4>
+
+				<p class="lead"><strong>Before we get started, we would first like to say a big thank you for purchasing our theme!</strong></p>
+				<p>Within this documentation we will take you through the basic process required to get your new theme up and running, along with taking you through all the fantastic functionality we have crammed into this theme.</p>
+				<p>If you have any questions about the theme, you can join our community support forum to get your question answered. You can find the forum at <a href="http://www.euged.com/support" target="_blank">www.euged.com/support</a></p>
+				<p>This documentation might seem a bit overwhelming at first due to it's length, but we have taken the time to carefully organise the document, splitting it into smaller, easier to manage sections. You can find a list of contents at the very top of the page. Clicking this will help you jump to the required section.</p>
+
+				<hr />
+
+				<h3 id="sec-">Find us online</h3>
+				<ul class="social">
+					<li><a href="http://dribbble.com/EugedLab" class="social-icon dribbble" target="_blank"><i class="icon-dribbble"></i></a></li>
+					<li><a href="http://twitter.com/EugedLab" class="social-icon twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+					<li><a href="http://facebook.com/EugedLab" class="social-icon facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+				</ul>
+
+				<hr />
+
+				<dl class="tabular">
+					<dt>Documentation Version</dt>
+					<dd>v1.2</dd>
+					<dt>Last Update</dt>
+					<dd>August 13th 2013</dd>
+					<dt>Created By</dt>
+					<dd><a href="http://www.euged.com" target="_blank">Euged</a></dd>
+					<dt>Theme Demo</dt>
+					<dd><a href="http://www.euged.com/demo/metrolium" target="_blank">euged.com/demo/metrolium</a></dd>
+					<dt>Support Forum</dt>
+					<dd><a href="http://www.euged.com/support/forum/metrolium/" target="_blank">euged.com/support/forum/metrolium/</a></dd>
+				</dl>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="content">
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-started">Getting Started</h2>
+
+				<p>The .ZIP you have downloaded from ThemeForest contains everything you need (plus more) to get started with the theme. Most importantly the .ZIP contains the theme itself (Zipped and Unzipped), but it also includes other goodies such as the original PSD created during the design process, this documentation, the licence file and some sample dummy data to get the ball moving.</p>
+
+				<h3 id="sec-zip-contents">.ZIP Contents &amp; Folder Structure</h3>
+
+				<p>In the .ZIP you will see the following folders: </p>
+
+				<ul>
+					<li><strong>Documentation</strong> &mdash; What you are reading now.</li>
+					<li><strong>Dummy Data</strong> &mdash; Three files containing example dummy data from our demo.</li>
+					<li><strong>PSDs</strong> &mdash; All the original design artwork.</li>
+					<li><strong>Theme</strong> &mdash; The parent and child theme in both Zipped and Unzipped forms.</li>
+				</ul>
+
+				<h3 id="sec-theme-requirements">Theme Requirements</h3>
+
+				<p>As this theme runs on WordPress, all of this themes requirements are defined by WordPress themselves. We have added nothing to the mix, if your server can run WordPress, then it can also run this theme.</p>
+				<p>WordPress requires a web server that supports PHP and MySQL. There are many different versions of PHP and MySQL, and there are also many versions of WordPress too, each with their own unique requirements. For that reason we always recommend using the very latest version of WordPress. Doing so will give you a much smoother experience. WordPress is constantly evolving and improving, using an old version just doesn't make sense.</p>
+				<ul>
+					<li>To download the latest version of WordPress <a href="http://wordpress.org/download/" target="_blank">click here</a></li>
+					<li>To view the most up-to-date minimum requirements <a href="http://wordpress.org/about/requirements/" target="_blank">click here</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-installation">Installation &amp; Setup</h2>
+
+				<h3 id="sec-install-wordpress">Installing WordPress</h3>
+
+				<p>Before you can install the Metrolium theme you need to set WordPress up on your web server and do some basic configuration. Metrolium theme then sits within WordPress to add the extra functionality and style. Installing and setting up WordPress is beyond the scope of this documentation, but you can find an in-depth guide <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">here</a>.</p>
+
+				<h3 id="sec-install-metrolium">Installing Metrolium</h3>
+
+				<p>If you have managed to get WordPress up and running, you will do fine with this next section as some of the steps you did to get WordPress installed will help you here too.</p>
+				<p>There are three main methods to get a WordPress theme installed:</p>
+
+				<h4 id="sec-install-method1">Method 1 &mdash; Envato Automatic Installation</h4>
+
+				<p>Possibly the easiest method for downloading, installing and updating the Metrolium theme is with the Envato Marketplace Toolkit Plugin.</p>
+				<p>This handy plugin developed by the team at Envato (ThemeForest) interfaces with your Envato marketplace account, and displays a list of supported themes you have purchased that can be installed directly from within WordPress. Furthermore it also supports updates and backups. Whenever a theme is updated you will be informed (similar to the way WordPress informs you of plugin updates), you can then choose to update at a time that suits you.</p>
+
+				<p>We have included the plugin within Metrolium as one of our suggested plugins.</p>
+
+				<ol>
+					<li>From within the WordPress Admin, click on <strong>Appearance</strong> and then <strong>Install Plugins</strong></li>
+					<li>Find and hover over 'Envato Toolkit' in the list, then click <strong>Install</strong></li>
+					<li>The plugin will then be installed. You can then click <strong>Return to Required Plugins Installer</strong> to activate the plugin</li>
+					<li>On the left hand menu, you should now see an Envato Toolkit item. Click on this to continue.</li>
+					<li>To establish an Envato Marketplace API connection navigate to the 'Envato Toolkit' page and insert your Marketplace username and secret API key in the designated input fields. To obtain your API Key, visit your 'Settings' page on any of the Envato Marketplaces.</li>
+					<li>Once the API connection has been established you will see a list of themes within your account that can be auto installed.</li>
+					<li>Find the theme you wish to install (hopefully this one) and the on screen instructions will guide you through the rest.</li>
+				</ol>
+
+				<h4 id="sec-install-method2">Method 2 &mdash; Upload Tool</h4>
+
+				<p>WordPress comes with a built in tool to help you install themes and plugins. You simply upload a .ZIP file to WordPress, and the rest is taken care of.</p>
+
+				<ol>
+					<li>Login to your WordPress admin environment.</li>
+					<li>Click on <strong>Themes</strong> under the <strong>Appearance</strong> menu.</li>
+					<li>In the tabs at the top of the page, click <strong>Install Themes</strong>.</li>
+					<li>Just under the tabs there is a row of links, click on <strong>Upload</strong>.</li>
+					<li>Using the file selection box, navigate to the folder where you extracted the contents of the .ZIP you downloaded from ThemeForest. Within this folder, click into <strong>/Theme/</strong> and select <strong>metrolium.zip</strong>, then click <strong>Install Now</strong>.</li>
+					<li>WordPress will now upload <strong>metrolium.zip</strong>, extract it and add it to the correct folder.</li>
+				</ol>
+
+				<p>The theme is now installed, all that needs to be done now is to make it active. Within the WordPress admin, browse through to the <strong>Themes</strong> page under <strong>Appearance</strong> and activate <strong>Metrolium</strong>.</p>
+
+				<p class="notice warning">This upload method can behave differently depending on the server environment and the security protocols being enforced on the web server. If you encounter problems with Method 2, move onto Method 3</p>
+
+				<h4 id="sec-install-method3">Method 3 &mdash; FTP Upload</h4>
+
+				<p>Method 3 requires the use of an FTP client to connect directly to the Web Server and upload the theme files manually. You will need to acquire the FTP details from your Web Host provider.</p>
+
+				<p>Once you have your FTP details you will need an FTP client to help you connect to the web server and transfer the files. <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> is a free FTP tool and has been my personal choice for many years. Once you have both your FTP details and an FTP client, continue with the instructions below.</p>
+
+				<ol>
+					<li>Connect to you Web Server using the FTP details your host provided you with.</li>
+					<li>Browse to the WordPress installation you wish to install this theme into.</li>
+					<li>Within <strong>/wp-content/</strong> click through to <strong>/themes/</strong></li>
+					<li>Unzip <strong>metrolium.zip</strong> to an easy to access destination on your computer (The desktop is usually a good location)</li>
+					<li>Upload the whole <strong>/metrolium/</strong> folder into the <strong>/themes/</strong> folder using the FTP client.</li>
+				</ol>
+
+				<p>The theme is now installed, all that needs to be done now is to make it active. Within the WordPress admin, browse through to the <strong>Themes</strong> page under <strong>Appearance</strong> and activate <strong>Metrolium</strong>.</p>
+
+				<h3 id="sec-folder-permissions">File &amp; Folder Permissions</h3>
+
+				<p>Upon installation of Metrolium, there is one final step you will need to make in order to get the most power out of Metrolium. In order for Metrolium to work properly, it needs access to certain files so it can perform certain tasks. When customizing the colors of Metrolium, specifically when saving your config, it creates/updates a file which is then included within your site. In order for Metrolium to update this file, it needs the correct permissions. You will need to log in via FTP to do this.</p>
+
+				<p>Once logged in to your websites FTP, you will need to locate your WordPress install. From there take the following folder path: <strong>/wp-content/themes/metrolium/assets/css/</strong>. Within this folder you will see <strong>skin-override.css</strong>, this is the file we need to update. Right clicking this file should present an option allowing you to change its permissions. You need to change the permissions to <strong>666</strong>. Then click OK, and you're done.</p>
+
+				<p class="notice warning">In short, you need to change the permissions of <strong>skin-override.css</strong> to <strong>666</strong></p>
+
+				<figure>
+					<img src="assets/images/permissions.png">
+					<figcaption>What the file permissions window could look like</figcaption>
+				</figure>
+
+				<h4>Multisite Setup</h4>
+
+				<p>If you are using a WordPress multisite configuration, Metrolium will make one stylesheet for each site within the network. They will be named in a similar way mentioned above, with the addition of the blog ID on the end, for example <code>skin-override-2.css</code>. The instructions outlined above will have to be carried out for each of these files.</p>
+
+				<h3 id="sec-child-theme">Child Theme</h3>
+
+				<p>Metrolium comes packaged with a child theme so you can develop on top of Metrolium as a base whilst retaining the ability to update the theme without fear of having your changes overwritten. Even if you don't plan on making any development changes to Metrolium, we still recommend you activate the child theme instead of the parent.</p>
+
+				<p>As standard, the child theme will look and function no differently than if you had the parent theme active.</p>
+
+				<p>To use the child theme, it's really easy. All you need to do is upload both themes, the main/parent theme (Metrolium) and the child theme (Metrolium-child) and activate Metrolium-child, not Metrolium. The child theme then inherits all styles and functionality from its parent.</p>
+
+				<p class="notice warning">WordPress stores certain themes settings in a safe way so they don't conflict with settings from other themes, old or new. As a child theme is technically a new theme, these certain settings won't be transfered over if you switch between parent and child themes. This is another reason why we suggest using the child theme from the start, as changing down the line could cause unnecessary problems and require you to reconfigure certain settings.</p>
+
+				<p>For a more in-depth read into child themes, WordPress has a much more substantial write up on the topic that explains how they work and some best practices when developing within them.</p>
+
+				<p><a href="http://codex.wordpress.org/Child_Themes" target="_blank">codex.wordpress.org/Child_Themes</a></p>
+
+				<h4>Child theme styles</h4>
+
+				<p>By default, the child theme inherits all the styles from the parent. If you wish to turn them all off and simply use Metrolium as a functionality base, then you can add the following line to your child-themes functions file:</p>
+
+				<p><code>define( 'INCLUDE_PARENT_STYLES', false );</code></p>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-configure-theme">Configuring Theme Options</h2>
+
+				<h3 id="sec-suggested-plugins">Suggested Plugins</h3>
+
+				<p>Within Metrolium we have included a selection of suggested plugins. None of these are required for the theme to function, but they all add an extra level of functionality that you might wish to make use of. Two of these plugins are premium plugins, which would cost <strong>$30</strong> to buy, but we have included them for you to use absolutely free of charge.</p>
+
+				<p>To see and install the suggested plugins:</p>
+
+				<ul>
+					<li>First log in to the WordPress admin panel.</li>
+					<li>From within the WordPress Admin, click on <strong>Appearance</strong> and then <strong>Install Plugins</strong></li>
+					<li>Simply hover over a plugin within the list, then click <strong>Install</strong></li>
+					<li>The plugin will then be installed. You can then click <strong>Return to Required Plugins Installer</strong> to activate the plugin</li>
+				</ul>
+
+				<p></p>
+
+				<h3 id="sec-global-settings">Global Settings</h3>
+
+				<p>Once the <strong>Metrolium</strong> theme is activated, a new item will appear in the WordPress admin menu on the left called <strong>Theme Options</strong>. Click this to access some of the configurable options.</p>
+
+				<p>The options are split up into several different tabs to make them easier to browse. You will see the following tabs:</p>
+
+				<ul>
+					<li><strong>Welcome</strong> &mdash; A welcome message (can be disabled)</li>
+					<li><strong>Global</strong> &mdash; Site wide options along with ability to add custom CSS</li>
+					<li><strong>Sidebars</strong> &mdash; Add your own custom sidebars</li>
+					<li><strong>Blog</strong> &mdash; Configuration for the blog</li>
+					<li><strong>Portfolio</strong> &mdash; Configuration for the portfolio</li>
+					<li><strong>Help</strong> &mdash; How to get help with Metrolium</li>
+				</ul>
+
+				<h3 id="sec-colors-style">Colors &amp; Styling</h3>
+
+				<p>The theme customizer is probably the most powerful feature of metrolium and really enables you to add your own creative flare to your website. To change the colors, you need to browse through to the <strong>Themes</strong> page under <strong>Appearance</strong> within the WordPress admin area.</p>
+
+				<p>Once there, and providing that the Metrolium theme is active, within the Current Theme section you will see a <strong>Customize</strong> link. Clicking this will take you to a new page with a sidebar on the left and a preview of the site on the right. Within the sidebar are many sections, each one dedicated to controlling a section of the site.</p>
+
+				<p>Describing how this system works with words wouldn't do it any justice, so we have made a video to help illustrate how easy to use and powerful this tool is.</p>
+
+				<h3 id="sec-example-data">Example .XML Data</h3>
+
+				<p>Metrolium comes packaged with three .XML files that contain example data for pages, posts and the portfolio to give you a quick boost of content when setting your site up. The content will also help those who learn by doing instead of reading.</p>
+
+				<p>To import the data, login to the WordPress admin and navigation to <strong>Tools > Import</strong>. From here you will be given a list of content types to import. Select the bottom in the list, labelled 'WordPress'. This will install the "WordPress Importer" plugin. Click <strong>Activate Plugin &amp; Run Importer</strong> to get started.</p>
+
+				<p>On the next screen, click <strong>Choose File</strong> and select one of the three files that was contained within the Metrolium .ZIP, <strong>post.xml</strong> for example. Then click <strong>Upload file and import</strong>. WordPress will then give you some basic options on how you want to setup the data, once done press <strong>Submit</strong> and the data will be imported.</p>
+
+				<p>Simply repeat this for the other two files if you wish. All data is optional, if you only want to see how the pages work, then you only need to import <strong>page.xml</strong></p>
+
+				<figure>
+					<img src="assets/images/import-xml.png">
+					<figcaption>Tools > Import</figcaption>
+				</figure>
+
+				<h3 id="sec-basic-configuration">Basic Configuration</h3>
+
+				<p>One of the first things you might want to do after setting up WordPress is to configure what page is your home page. By default WordPress displays your blog posts on the home page. If you want to have a static home page and choose to display your blogs elsewhere, enter the WordPress admin and click on <strong>Settings</strong> then <strong>Reading</strong></p>
+
+				<p>Once on this page, at the very top is the controls to pick your home page. As mentioned above, by default "Your latest posts" will be selected. Changing to "A static page" will then enable you to pick a new home page.</p>
+
+				<p>If you imported the sample .XML page data, then these lists should already be populated with page titles. Select whichever page you would like to be your home page, and because we no longer have a defined section to show our blog posts, we should set up a page for this too.</p>
+
+				<figure>
+					<img src="assets/images/reading-settings.png">
+					<figcaption>Settings > Reading</figcaption>
+				</figure>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-navigation-menus">Navigation &amp; Menus</h2>
+
+				<p>Metrolium offers two menu locations:</p>
+
+				<ul>
+					<li><strong>Primary Navigation</strong> - This appears at the very top of the page and is what it says on the tin, the primary navigation for the whole site.</li>
+					<li><strong>Trim Links</strong> - This appears at the very bottom of the page, and is designed primarily for adding the traditional legal links such as privacy policy and terms &amp; conditions etc but its entirely up to you.</li>
+				</ul>
+
+				<p>To make use of these theme locations, you first need to create a menu and add some links to it using the on screen interface. You can then assign your new menu to one of these theme locations. Upon first installation of Metrolium you should setup a minimum of two menus, one for each location and assign them. You can create additional menus for use elsewhere around the site such as in sidebar widgets.</p>
+
+				<p class="notice success"><strong>TIP</strong> - It's a good idea if you plan on making any significant changes to an already active menu, or are making changes that will only be in place temporarily, to make a brand new menu, set it up as needed, then simply switch the menu location to that of the new menu. Then, if you need to revert back it can be done instantly by switching back to the old menu.</p>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-configuring-content">Configuring Content Options</h2>
+
+				<p>Each page can have its options independently configured enabling you to have complete control over how each and every page looks and feels. This gives you the power to break out of the traditional template structure other themes can use, where you have a small number of strict templates.</p>
+
+				<h3 id="sec-breadcrumbs">Breadcrumbs</h3>
+
+				<p>Whilst the breadcrumbs are a very useful tool for navigating around a website, the majority of the time you would want these enabled. You can however turn them off on certain pages if you wish. Within the "Page Options" panel is a checkbox enabling you to disable them. By default they are on.</p>
+
+				<h3 id="sec-sidebars">Sidebars</h3>
+
+				<p>In the "Page Options" panel is a drop down list enabling you pick which sidebar (if any) you would like to show. Once a sidebar is chosen, an additional box will appear allowing you to configure which side you would like the display the sidebar, left or right.</p>
+
+				<p class="notice warning">Please note, pages that make use of the [band] shortcode are unable to have sidebars.</p>
+
+				<h3 id="sec-title-bar">Title Bar</h3>
+
+				<p>By default the Title bar is disabled. You can enable it within the "Page Options" panel. Other than 'hidden', there are two other options: 'Slider' and 'Active'. By selecting 'Slider', a new input box will appear where you can enter the shortcode of the slider you wish to display. By selecting 'Active', several new checkboxes and radio buttons will appear, enabling you to configure most aspects of the now active title bar.</p>
+
+				<h3 id="sec-post-formats">Post Formats</h3>
+
+				<p>You can only select 'Post Formats' for post items (the blog). When adding or editing a blog, you can choose its post format from the 'Format' panel (usually found in the right column near the top). There are several formats to choose from. By picking the most relevant post format to the content you are posting, you can tailor the way the content gets displayed on the front end. For example, selecting the 'Video' post format will tell Metrolium to show the video content you are posting about more prominently.</p>
+
+				<p>Selecting certain post format will cause additional option panels to display. These additional panels contain input boxes specific to the current post format selected.</p>
+
+				<h3 id="sec-portfolio">Portfolio</h3>
+
+				<p>To setup the slider that appears on a single project page, simply follow these instructions:</p>
+
+				<ul>
+					<li>When editing a single project, click <strong>Add Media</strong> button that appears just below the title.</li>
+					<li>In the new window that pops up, click on <strong>Create Gallery</strong> on the left.</li>
+					<li>Select all the items from your Media Library that you wish to appear in the slider.</li>
+					<li>Click <strong>Create a new gallery</strong> in the bottom right.</li>
+					<li>You can then fine tune the order of the images along with some other options.</li>
+					<li>Finally, click <strong>Insert Gallery</strong> in the bottom right.</li>
+				</ul>
+
+				<p class="notice warning">If you add more than one [gallery] to a page, all the images accross all galleries will be merged together to create the slider.</p>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-shortcodes">Shortcodes</h2>
+
+				<p>Shortcodes are small text snippets that you can insert into your page, post or projects content. These shortcodes then get processed by WordPress and output to the front end. Shortcodes can be very powerful, with all the heavy lifting done by the theme and WordPress. Entering a seemingly simple shortcode can produce something much more functional and attractive to the front end.</p>
+
+				<p>Shortcodes are easily recognisable by their square brackets, e.g. <code>[button]Click me[/button]</code>.</p>
+
+				<p>Shortcodes usually come in matching pairs. You might have noticed in the example above the <strong>button</strong> shortcode seemed to be mentioned twice. In fact this is all one shortcode, the first instance is known as the open, and the second instance the close. The subtle difference between an opening and closing shortcode is the addition of a forward slash at the start of the close. Everything between the open and close is the content of that shortcode. Take the button example above, which will output a button with the label 'Click me'.</p>
+
+				<p>It is crucial that this pattern is adhered to. Failure to do so will almost guarantee that your front end page will not turn out as you thought it would.</p>
+
+				<p>There are some shortcodes that only require an opening shortcode, for example <code>[gap]</code>, a simple shortcode that inserts some white space into the page, useful for creating layouts and page structure. As the shortcode is fairly simple in its mechanics, it doesn't require any content, therefore it doesn't require a closing <code>[/gap]</code>.</p>
+
+				<p>You can find out more information on all the specific shortcodes included within Metrolium by reading our extensive <a href="#sec-shortcode-reference">Shortcode Reference Guide</a></p>
+
+				<p class="notice warning">You can place shortcodes within shortcodes to create more advanced layouts and functions. However, due to a limitation with the WordPress core, there are certain restrictions to this. You cannot nest shortcodes within each other if they share the exact same name. For example, using the <code>[box]</code> shortcode, you can easily add a <code>[button]</code> inside like so: <code>[box] [button] Click Me! [/button] [/box]</code>. You cannot add another <code>[box]</code> within a <code>[box]</code>. As the shortcodes share the same name, WordPress incorrectly outputs the code on the front end, and is almost certain to look awful. For more information on nesting shortcodes, you can read the official WordPress documentation <a href="http://codex.wordpress.org/Shortcode_API#Nested_Shortcodes" target="_blank">here</a>.</p>
+
+				<h3 id="sec-example-templates">Example Templates</h3>
+
+				<h4>Homepage 1 (Marketing)</h4>
+
+					<textarea class="copypaste">[gap height="30"]
+
+					[row]
+					[column width="six-tenth"]<img style="display: block; max-height: 250px; margin: 0 auto;" alt="marketing_variety" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/05/marketing_variety.jpg" />[/column]
+					[column width="four-tenth"]
+					<h1>Unlimited Color Combinations</h1>
+					Metrolium features dozens of customizable elements that can all be colored independently of each other which means that unlike other themes, you're not limited by 2 colours like primary and secondary but instead have complete control to produce a truly unique color combination making it your own.
+					[/column]
+					[/row]
+
+					[gap height="30"]
+
+					[band variation="alternative" backgroundimage="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/band_1.jpg" paddingtop="75px" paddingbottom="50px" inset="yes"]
+
+					[row verticallyalign="yes"]
+					[column width="four-tenth"]
+					<h1>Responsive and Retina Ready</h1>
+					Metrolium is a responsive WordPress theme which means that it works beautifully on lots of resolutions and devices including smartphones, tablets, PCs and Mac. It also looks absolutely stunning with super crisp, hi-dpi, Retina Ready images. Your visitors will have an amazing experience, whatever they're browsing on.
+					[/column]
+					[column width="six-tenth"]<img style="display: block; max-height: 250px; margin: 0 auto;" alt="marketing_responsive" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/03/marketing_responsive.png" />[/column]
+					[/row]
+
+					[band variation="default" paddingtop="75px" paddingbottom="50px"]
+
+					[row verticallyalign="yes"]
+					[column width="six-tenth"]<img style="display: block; max-height: 250px; margin: 0 auto;" alt="marketing_customize" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/05/marketing_customize.jpg" />[/column]
+					[column width="four-tenth"]
+					<h1>Get creative with real time preview</h1>
+					Metrolium features the impressive WordPress Customizer which allows you to customize the look and feel of your theme with a real time preview, no refreshes, no tab switching and no boring over engineered admin panel. Once you're happy with the result, click 'Save &amp; Publish' to show the world your uniquely designed website.
+					[/column]
+					[/row]
+
+					[band variation="alternative" backgroundimage="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/band_2.jpg" paddingtop="75px" paddingbottom="50px" inset="yes"]
+
+					[row verticallyalign="yes"]
+					[column width="three-fifth" offset="one-fifth"]
+					<h1 style="text-align: center;">600+ Google Web Fonts</h1>
+					<p style="text-align: center;">Typography is a important aspect of any website and that's why we've integrated Google Web Fonts into Metrolium giving access to an ever expanding web font set, currently at over 600!</p>
+					[gap height="20"]
+					<p style="text-align: center;">[button link="http://www.google.com/fonts/" target="_blank"]Browse the library[/button]</p>
+					[/column]
+					[/row]
+
+					[band variation="default" paddingtop="75px" paddingbottom="50px"]
+
+					[row verticallyalign="yes"]
+					[column width="six-tenth"]
+					<div style="padding: 0 10%;">
+
+					[subrow linearise="no"]
+					[subcolumn width="one-half"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-half"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[/subrow]
+
+					[subrow linearise="no"]
+					[subcolumn width="one-third"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-third"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-third"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[/subrow]
+
+					[subrow linearise="no"]
+					[subcolumn width="one-quarter"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-quarter"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-quarter"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-quarter"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[/subrow]
+
+					[subrow linearise="no"]
+					[subcolumn width="two-third"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[subcolumn width="one-third"][box borderradius="5px" padding="30px 0 10px 0"][/box][/subcolumn]
+					[/subrow]
+
+					</div>
+					[/column]
+					[column width="four-tenth"]
+					<h1>Create unique layouts quickly and easily</h1>
+					Metrolium's bespoke, robust responsive grid means that you can create unique layouts that work across all devices, quickly and easily.
+
+					[button link="#" target="_blank"]Find out how[/button]
+					[/column]
+					[/row]
+					</textarea>
+
+				<h4>Homepage 2 (Classic)</h4>
+
+					<textarea class="copypaste">[row]
+
+					[column width="one-quarter"]
+					<h2 class="h4 textalign-c"><a href="/demo/metrolium/features/responsive-and-retina-ready/" class="body-color"><i class="icon-tablet icon-96px icon-rounded"></i> Responsive</a></h2>
+					<p>Metrolium has <a href="/demo/metrolium/features/responsive-and-retina-ready/">responsive design</a> which means that it works beautifully across smartphones, tablets and desktop.</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4 textalign-c"><a href="/demo/metrolium/features/responsive-and-retina-ready/" class="body-color"><i class="icon-eye-open icon-96px icon-rounded"></i> Retina Ready</a></h2>
+					<p>Metrolium is <a href="/demo/metrolium/features/responsive-and-retina-ready/">Retina Ready</a> which makes your website look even more beautiful on supporting devices with 2.2x detail.</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4 textalign-c"><a href="/demo/metrolium/features/layer-slider/" class="body-color"><i class="icon-picture icon-96px icon-rounded"></i> Awesome Sliders</a></h2>
+					<p>Not one, not two, but THREE awesome sliders are packed into Metrolium, including 2 premium parallax sliders worth $30!</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4 textalign-c"><a href="/demo/metrolium/features" class="body-color"><i class="icon-trophy icon-96px icon-rounded"></i> Tons of Options</a></h2>
+					<p>And if you thought that was it, you'd be wrong. We've packed <a href="/demo/metrolium/features">tons of features</a> into Metrolium, it's almost unbelievable!</p>
+					[/column]
+
+					[/row]
+
+					<hr class="shadow">
+
+					<h2 class="textcenter">Featured Work</h2>
+					<p class="textcenter" style="font-size: 14px;">Show off your awesome portfolio work with a single shortcode!</p>
+
+					[gap height="30"]
+
+					[portfolio load="4" columns="4" orderby="menu_order" showtitle="no" showdate="no"]
+					<p style="text-align: center;">[button link="/demo/metrolium/portfolio"]VIEW OUR PORTFOLIO[/button]</p>
+
+					<hr class="shadow">
+
+					[row]
+					[column width="three-quarter"]
+					<h2>Latest from the blog</h2>
+					[blog load="3" columns="3" showimage="yes" showexcerpt="no" boxed="no" orderby="date"]
+					[/column]
+					[column width="one-quarter"]
+					<h2>Testimonial</h2>
+					[blockquote type="testimonial" author="Lyla Ava" role="CEO - Some Company" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/Untitled-3.jpg"]
+
+					Metrolium is absolutely incredible, I can't believe how easy and simple it is to use, yet I haven't even scratched the surface yet with all the features there are packed into this! Love it!
+
+					[/blockquote]
+					[/column]
+					[/row]
+					</textarea>
+
+				<h4>Homepage 3 (Product)</h4>
+
+					<textarea class="copypaste">[layerslider id="15"]
+
+					[gap height="40"]
+
+					[callout icon="star" title="Metrolium - Awesome WP Theme" buttontext="Buy Now" buttonlink="http://themeforest.net/item/metrolium-responsive-multipurpose-wp-theme/5018371"]You saw that coming right? Advertising our own theme on our example product homepage. =)[/callout]
+
+					[hr style="shadow"]
+
+					<h2>The Software</h2>
+
+					[row]
+					[column width="one-third"]
+
+					Nullam mollis felis sit amet sapien viverra aliquet. Morbi venenatis, purus eu euismod lacinia, massa urna faucibus augue, imperdiet bibendum dolor odio a augue. Suspendisse vitae lorem a quam fermentum vehicula. Aenean id diam quam, ut condimentum felis.
+
+					Nunc ac velit sit amet neque tincidunt commodo id eleifend turpis. Integer facilisis nibh ac elit pellentesque in tristique velit scelerisque. Suspendisse potenti. Aenean quis enim turpis.
+
+					[/column]
+
+					[column width="two-third"]
+
+					[subrow linearise="no"]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_1" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_1.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_2" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_2.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_3" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_3.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_4" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_4.jpg" width="270" height="180" /></center>[/subcolumn]
+					[/subrow]
+
+					[subrow linearise="no"]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_5" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_5.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_6" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_6.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_7" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_7.jpg" width="270" height="180" /></center>[/subcolumn]
+					[subcolumn width="one-quarter"]<center><img class="alignnone size-full wp-image-395" alt="screenshot_8" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/screenshot_8.jpg" width="270" height="180" /></center>[/subcolumn]
+					[/subrow]
+
+					[/column]
+
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="one-half"]<h2>As used by</h2>[/column]
+					[column width="one-half"]<p style="text-align:right">[button]Find out why[/button]</p>[/column]
+					[/row]
+
+					[gap height="20"]
+
+					[row]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/brand_apple.png" alt="brand_apple" width="336" height="200" class="alignnone size-full wp-image-353" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/brand_microsoft.png" alt="brand_microsoft" width="336" height="200" class="alignnone size-full wp-image-356" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/brand_ibm.png" alt="brand_ibm" width="336" height="200" class="alignnone size-full wp-image-355" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/brand_google.png" alt="brand_google" width="336" height="200" class="alignnone size-full wp-image-354" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/brand_samsung.png" alt="brand_samsung" width="336" height="200" class="alignnone size-full wp-image-357" /></center>[/column]
+					[/row]
+
+					[gap height="20"]
+					</textarea>
+
+				<h4>Homepage 4 (Corporate)</h4>
+
+					<textarea class="copypaste">[row]
+
+					[column width="one-quarter"]
+					<h2 class="h4"><a href="/demo/metrolium/features/responsive-and-retina-ready/" class="body-color"><i class="icon-tablet icon-96px" style="width:100%"></i> Responsive</a></h2>
+					<p>Metrolium has <a href="/demo/metrolium/features/responsive-and-retina-ready/">responsive design</a> which means that it works beautifully across smartphones, tablets and desktop.</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4"><a href="/demo/metrolium/features/responsive-and-retina-ready/" class="body-color"><i class="icon-eye-open icon-96px" style="width:100%"></i> Retina Ready</a></h2>
+					<p>Metrolium is <a href="/demo/metrolium/features/responsive-and-retina-ready/">Retina Ready</a> which makes your website look even more beautiful on supporting devices with 2.2x detail.</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4"><a href="/demo/metrolium/features/layer-slider/" class="body-color"><i class="icon-picture icon-96px" style="width:100%"></i> Awesome Sliders</a></h2>
+					<p>Not one, not two, but THREE awesome sliders are packed into Metrolium, including 2 premium parallax sliders worth $30!</p>
+					[/column]
+
+					[column width="one-quarter"]
+					<h2 class="h4"><a href="/demo/metrolium/features" class="body-color"><i class="icon-trophy icon-96px" style="width:100%"></i> Tons of Options</a></h2>
+					<p>And if you thought that was it, you'd be wrong. We've packed <a href="/demo/metrolium/features">tons of features</a> into Metrolium, it's almost unbelievable!</p>
+					[/column]
+
+					[/row]
+
+					[band variation="alternative" inset="yes" backgroundimage="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/band_1.jpg"]
+
+					[row]
+					[column width="one-half"]
+					<h2 class="underline">Company Overview</h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod est eget nisl tempor vitae accumsan enim elementum. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mattis enim ut nunc ultricies rutrum. Aliquam at dictum ligula. Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna. Vivamus eget nisl eget dui commodo congue vel ut tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum placerat, eros et euismod luctus, lacus tortor egestas eros, eget porta quam nisi sed orci.
+					[/column]
+
+					[column width="one-half"]
+					<h2 class="underline">Our History</h2>
+					[accordions]
+					[accordion title="The Early years"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="Moving offices"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="Further Expansion"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="The Future"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[/accordions]
+					[/column]
+					[/row]
+
+					[band variation="default"]
+
+					<h2 style="text-align:center">Our Clients</h2>
+
+					<div class="homepage-corporate-clients">
+					[row]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/logo-codecanyon.png" class="aligncenter size-full wp-image-353" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/logo-photodune.png" class="alignnone size-full wp-image-356" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/logo-themeforest.png" class="alignnone size-full wp-image-355" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/logo-audiojungle.png" class="alignnone size-full wp-image-354" /></center>[/column]
+					[column width="one-fifth"]<center><img src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/06/logo-3docean.png" class="alignnone size-full wp-image-357" /></center>[/column]
+					[/row]
+					</div>
+					</textarea>
+
+				<h4>Homepage 5 (Magazine)</h4>
+
+					<textarea class="copypaste">[layerslider id="17"]
+
+					[gap height="30"]
+
+					<h2>Recent News</h2>
+					[blog load="3" columns="3" showimage="yes" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"]
+
+					[box]
+					<h3>Featured Posts</h3>
+					[blog load="2" columns="2" showimage="yes" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"]
+					[/box]
+
+					<h3>Technology Sector</h3>
+					[blog load="3" columns="3" showimage="yes" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"][blog load="3" columns="3" showimage="yes" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"]<p style="text-align:right">[button size="xsmall"]More Tech News&hellip;[/button]</p>
+					</textarea>
+
+				<h4>Homepage 6 (Portfolio)</h4>
+
+					<textarea class="copypaste">[portfolio columns="4" load="-1"]
+					</textarea>
+
+				<h4>Homepage 7 (Landing)</h4>
+
+					<textarea class="copypaste">[gap height="80"]
+
+					[row]
+					[column width="two-third" offset="one-sixth"]
+					<div style="text-align:center">
+
+					<h1 style="margin:0">Coming Soon</h1>
+					<h2 class="h5" style="letter-spacing:10px;opacity:0.7">in 2013</h2>
+
+					[hr]
+
+					Metrolium comes with a landing page design, perfect for gauging interest for a product or service you're considering creating or for collecting emails of users that want to be notified when you launch your awesome new product or service. In fact, it could be used for all sorts of reasons.
+
+					[gap height="30"]
+
+					<div style="background-color:#FFF;box-shadow:0 1px 3px rgba(0,0,0,0.2);padding:40px">
+
+					<form>
+					<ul>
+					<li>
+					<label style="margin-bottom:20px">Some catchy strap line to encourage users to leave their email</label>
+					<input type="text" name="email" style="text-align:center" placeholder="example@example.com">
+					</li>
+					</ul>
+					<p style="margin-bottom:0"><input type="submit" value="Notify Me" ></p>
+					</form>
+
+					</div>
+
+					</div>
+					[/column]
+					[/row]
+
+					[gap height="100"]
+				</textarea>
+
+				<h4>About Us</h4>
+
+					<textarea class="copypaste">[row]
+					[column width="three-fifth"]
+					<h2 class="underline">Company Overview</h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod est eget nisl tempor vitae accumsan enim elementum. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mattis enim ut nunc ultricies rutrum. Aliquam at dictum ligula. Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna. Vivamus eget nisl eget dui commodo congue vel ut tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum placerat, eros et euismod luctus, lacus tortor egestas eros, eget porta quam nisi sed orci.
+					[/column]
+
+					[column width="two-fifth"]
+					<h2 class="underline">Our History</h2>
+					[accordions]
+					[accordion title="The Early years"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="Moving offices"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="Further Expansion"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[accordion title="The Future"]Duis adipiscing, diam ac lacinia pellentesque, felis elit euismod nulla, sit amet accumsan risus erat eu nisi. Proin eu dui sem, in interdum urna.[/accordion]
+					[/accordions]
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+					<h2 class="underline">The Office</h2>
+					[row]
+					[column width="two-fifth"]<a href="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/the_office.jpg"><img class="alignnone size-full wp-image-257" alt="Office building" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/the_office.jpg" width="548" height="364" /></a>[/column]
+
+					[column width="three-fifth"]
+					Nam eget varius erat. Sed accumsan enim eget elit mattis bibendum. Sed ac metus ante. Quisque congue mollis lorem vel mattis. Phasellus ut commodo lacus. Sed imperdiet neque eget libero volutpat facilisis. Vivamus at vehicula arcu. Sed interdum, lacus et malesuada consectetur, purus eros bibendum mauris, quis laoreet turpis sapien eu elit.
+
+					Praesent tincidunt elit nec elit imperdiet rutrum varius velit bibendum. Pellentesque eu arcu sit amet magna rutrum mattis. Proin eget felis mauris. Ut vitae dolor lorem. Aenean egestas sodales nibh, in pretium elit hendrerit in. Curabitur sodales justo vehicula velit adipiscing a adipiscing urna malesuada. Fusce nec leo tellus. Praesent eget pulvinar lectus. Phasellus dapibus, ante vehicula eleifend lobortis, odio massa faucibus eros, sit amet ullamcorper turpis ante ut erat. Morbi sit amet erat ut metus molestie cursus vitae adipiscing dolor.
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>Who's in charge</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero. Nam semper pharetra enim vitae tincidunt. Curabitur eget eros leo. In sodales, quam in rutrum consectetur, metus dolor egestas mauris, nec aliquet enim elit sit amet metus.
+
+					</div>
+					[/column]
+					[/row]
+
+					[gap height="20"]
+					[row]
+					[column width="one-quarter"]
+					[person name="Leonidas Callum" role="CEO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_3.jpg" email="test@test.com"]Aliquam sed urna turpis, ut mattis nunc. Proin vitae risus nisi. Vestibulum iaculis cursus semper. Morbi id lorem libero, quis.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person name="Ida Klaudia" role="CFO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_1.jpg" email="test@test.com"]Nulla sed ligula nunc. Donec sed risus eget libero fringilla aliquam sit amet ac nibh. Nulla scelerisque, diam ac lacinia pellentesque.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person name="Robert Xavier" role="COO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_1.jpg" email="test@test.com"]Fusce in metus orci, ac laoreet leo. In hac habitasse platea dictumst. Nullam condimentum velit a arcu accumsan in pretium.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person name="Matas Zayn" role="Chairman" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_2.jpg" email="test@test.com"]Phasellus nec magna nec enim egestas tincidunt. Quisque viverra scelerisque pulvinar. In pretium dignissim adipiscing.[/person]
+					[/column]
+					[/row]
+					</textarea>
+
+				<h4>Contact Us</h4>
+
+					<textarea class="copypaste">[row]
+					[column width="seven-tenth"]
+					<h2>Contact Form</h2>
+					Vestibulum congue sollicitudin neque, placerat lobortis enim facilisis sed. Etiam interdum dignissim sem id luctus. Sed nunc lectus, ornare quis interdum eu, auctor sit amet lorem. Quisque condimentum orci ac urna scelerisque tempus non ut neque. Sed scelerisque luctus tellus.
+
+					[contact-form-7 id="1348" title="Contact form 1"]
+
+					[/column]
+
+					[column width="three-tenth"]
+					<h3>Contact Details</h3>
+					<dl class="tabular"><dt>Email</dt><dd><a href="hello@euged.com">hello@euged.com</a></dd><dt>Telephone</dt><dd>01234 567 890</dd><dt>Address</dt><dd><address>123 Corporation Street,
+					Dummyside,
+					Dummyport,
+					DU1 1MY</address></dd></dl>
+					<h3>Opening Hours</h3>
+					<dl class="tabular"><dt>Monday</dt><dd>9:00 - 5:30</dd><dt>Tuesday</dt><dd>9:00 - 5:30</dd><dt>Wednesday</dt><dd>9:00 - 8:00</dd><dt>Thursday</dt><dd>9:00 - 5:30</dd><dt>Friday</dt><dd>9:00 - 5:30</dd><dt>Saturday</dt><dd>Closed</dd><dt>Sunday</dt><dd>Closed</dd></dl>[/column]
+					[/row]
+					</textarea>
+
+				<h4>FAQ's</h4>
+
+					<textarea class="copypaste"><h2>We have the answers</h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in mauris tempor purus accumsan dignissim. Morbi risus nisl, adipiscing vel sagittis sit amet, condimentum vitae lectus. Pellentesque nec eros nulla. Vivamus nec ligula dolor. In facilisis suscipit gravida. Nunc malesuada.
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="three-fifth"]
+
+					[accordions]
+					[accordion title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[accordion title="Fusce hendrerit adipiscing tortor, ac faucibus felis vehicula vitae"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[accordion title="Aenean lorem odio, lobortis sed varius non, pretium sed leo"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[accordion title="Nullam nec ante quis sapien scelerisque porta eu at lectus"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[accordion title="Morbi condimentum diam eu felis feugiat pulvinar"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[accordion title="Aliquam vitae dui dolor"]win[/accordion]
+					[accordion title="Duis sodales pellentesque ante eget malesuada"]
+
+					Sed pulvinar tortor at metus dictum ac consectetur purus sagittis. Aliquam vehicula hendrerit consequat. Vestibulum purus justo, faucibus ut facilisis id, sollicitudin eu nulla. Nunc ac gravida nisl. Cras purus quam, hendrerit id lobortis vitae, porttitor ac enim. Donec sollicitudin ornare libero, eget tincidunt elit semper non
+
+					[/accordion]
+					[/accordions]
+
+					[/column]
+
+					[column width="two-fifth"]
+					<h3>Couldn't find the answer?</h3>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in mauris tempor purus accumsan dignissim. Morbi risus nisl, adipiscing vel sagittis sit amet, condimentum vitae lectus. Pellentesque nec eros nulla. Vivamus nec ligula dolor. In facilisis suscipit gravida. Nunc malesuada.
+
+					[button]Ask a question[/button]
+
+					[/column]
+
+					[/row]
+					</textarea>
+
+				<h4>Jobs</h4>
+
+					<textarea class="copypaste"><h2>Want to join our team?</h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat accumsan diam non semper. Etiam at vulputate turpis. Cras augue nunc, aliquam quis convallis ac, lobortis sed odio. Proin lorem purus, sollicitudin a porttitor ac, pellentesque vitae mi. Suspendisse molestie lacus vel mi ultricies vel rhoncus magna porttitor. Curabitur tristique.
+
+					[box]
+					<h3>Web Designer</h3>
+					[row]
+					[column width="two-third"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat accumsan diam non semper. Etiam at vulputate turpis. Cras augue nunc, aliquam quis convallis ac, lobortis sed odio. Proin lorem purus, sollicitudin a porttitor ac, pellentesque vitae mi. Suspendisse molestie lacus vel mi ultricies vel rhoncus magna porttitor. Curabitur tristique.
+
+					[/column]
+					[column width="one-third"]
+					[icon_list]
+					[item]HTML 5[/item]
+					[item]CSS 3[/item]
+					[item]Web Standards[/item]
+					[item]PHP[/item]
+					[item]MySQL[/item]
+					[item]JavaScript[/item]
+					[/icon_list]
+					[/column]
+					[/row]
+
+					[button]Apply Now[/button]
+					[/box]
+
+					[box]
+					<h3>Web Developer</h3>
+					[row]
+					[column width="two-third"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat accumsan diam non semper. Etiam at vulputate turpis. Cras augue nunc, aliquam quis convallis ac, lobortis sed odio. Proin lorem purus, sollicitudin a porttitor ac, pellentesque vitae mi. Suspendisse molestie lacus vel mi ultricies vel rhoncus magna porttitor. Curabitur tristique.
+
+					[/column]
+					[column width="one-third"]
+					[icon_list]
+					[item]HTML 5[/item]
+					[item]CSS 3[/item]
+					[item]Web Standards[/item]
+					[item]PHP[/item]
+					[item]MySQL[/item]
+					[item]JavaScript[/item]
+					[/icon_list]
+					[/column]
+					[/row]
+
+					[button]Apply Now[/button]
+					[/box]
+					</textarea>
+
+				<h4>Meet the Team</h4>
+
+					<textarea class="copypaste">[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero. Nam semper pharetra enim vitae tincidunt. Curabitur eget eros leo. In sodales, quam in rutrum consectetur, metus dolor egestas mauris, nec aliquet enim elit sit amet metus.</div>
+					[/column]
+					[/row]
+
+					[gap height="40"]
+
+					<img alt="" src="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_row.jpg" />
+
+					[gap height="30"]
+
+					[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>Management</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero. Nam semper pharetra enim vitae tincidunt. Curabitur eget eros leo. In sodales, quam in rutrum consectetur, metus dolor egestas mauris, nec aliquet enim elit sit amet metus.
+
+					</div>
+					[/column]
+					[/row]
+
+					[gap height="20"]
+
+					[row]
+					[column width="one-quarter"]
+					[person boxed="no" name="Leonidas Callum" role="CEO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_3.jpg" facebook="#" email="test@test.com"]Aliquam sed urna turpis, ut mattis nunc. Proin vitae risus nisi. Vestibulum iaculis cursus semper. Morbi id lorem libero, quis.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Ida Klaudia" role="CFO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_1.jpg" twitter="#" email="test@test.com"]Nulla sed ligula nunc. Donec sed risus eget libero fringilla aliquam sit amet ac nibh. Nulla scelerisque, diam ac lacinia pellentesque.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Robert Xavier" role="COO" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_1.jpg" linkedin="#" twitter="#" facebook="#" email="test@test.com"]Fusce in metus orci, ac laoreet leo. In hac habitasse platea dictumst. Nullam condimentum velit a arcu accumsan in pretium.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Matas Zayn" role="Chairman" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_2.jpg" linkedin="#" twitter="#" email="test@test.com"]Phasellus nec magna nec enim egestas tincidunt. Quisque viverra scelerisque pulvinar. In pretium dignissim adipiscing.[/person]
+					[/column]
+					[/row]
+
+					[band variation="alternative" inset="yes"]
+
+					[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>Training</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero. Nam semper pharetra enim vitae tincidunt. Curabitur eget eros leo. In sodales, quam in rutrum consectetur, metus dolor egestas mauris, nec aliquet enim elit sit amet metus.
+
+					</div>
+					[/column]
+					[/row]
+
+					[gap height="20"]
+
+					[row]
+					[column width="one-quarter"]
+					[person boxed="no" name="Lucie Roshni" role="Trainer" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_2.jpg" twitter="#" email="test@test.com"]Aliquam sed urna turpis, ut mattis nunc. Proin vitae risus nisi. Vestibulum iaculis cursus semper. Morbi id lorem libero, quis.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Carla Beca" role="Trainer" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_4.jpg" linkedin="#" twitter="#" facebook="#" email="test@test.com"]Nulla sed ligula nunc. Donec sed risus eget libero fringilla aliquam sit amet ac nibh. Nulla scelerisque, diam ac lacinia pellentesque.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Jasmine Nabila" role="Trainer" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_3.jpg" twitter="#" facebook="#" email="test@test.com"]Fusce in metus orci, ac laoreet leo. In hac habitasse platea dictumst. Nullam condimentum velit a arcu accumsan in pretium.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Jakub Henley" role="Trainer" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_5.jpg" linkedin="#" twitter="#" email="test@test.com"]Phasellus nec magna nec enim egestas tincidunt. Quisque viverra scelerisque pulvinar. In pretium dignissim adipiscing.[/person]
+					[/column]
+					[/row]
+
+					[band variation="default"]
+
+					[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>Consultancy</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero. Nam semper pharetra enim vitae tincidunt. Curabitur eget eros leo. In sodales, quam in rutrum consectetur, metus dolor egestas mauris, nec aliquet enim elit sit amet metus.
+
+					</div>
+					[/column]
+					[/row]
+
+					[gap height="20"]
+
+					[row]
+					[column width="one-quarter"]
+					[person boxed="no" name="Randolf Gavin" role="Consultant" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_7.jpg" linkedin="#" facebook="#" email="test@test.com"]Aliquam sed urna turpis, ut mattis nunc. Proin vitae risus nisi. Vestibulum iaculis cursus semper. Morbi id lorem libero, quis.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Lexii Veronika" role="Consultant" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_6.jpg" linkedin="#" twitter="#" facebook="#" email="test@test.com"]Nulla sed ligula nunc. Donec sed risus eget libero fringilla aliquam sit amet ac nibh. Nulla scelerisque, diam ac lacinia pellentesque.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Edward Kent" role="Consultant" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_m_6.jpg" twitter="#" email="test@test.com"]Fusce in metus orci, ac laoreet leo. In hac habitasse platea dictumst. Nullam condimentum velit a arcu accumsan in pretium.[/person]
+					[/column]
+					[column width="one-quarter"]
+					[person boxed="no" name="Livvy Sheza" role="Consultant" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/team_f_5.jpg" twitter="#" email="test@test.com"]Phasellus nec magna nec enim egestas tincidunt. Quisque viverra scelerisque pulvinar. In pretium dignissim adipiscing.[/person]
+					[/column]
+					[/row]
+
+					[gap height="28"]
+					[callout title="Want to join the team?" buttontext="Recruiting now" buttonlink="#"]We are always on the look out for skilled professionals to strengthen our team[/callout]
+					</textarea>
+
+				<h4>Testimonials</h4>
+
+					<textarea class="copypaste">[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>What the people say…</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero.
+
+					</div>
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="one-half"]
+					[blockquote type="testimonial" author="Kacper Atlas" role="Southport" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_1.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum feugiat ornare. Duis sagittis, est vitae euismod rhoncus, orci turpis cursus libero, ut tempor mi nibh at massa. Suspendisse accumsan nulla eget metus tempus commodo. Cras a dui velit, vitae.
+
+					[/blockquote]
+					[/column]
+					[column width="one-half"]
+					[blockquote type="testimonial" author="Brandan Carlton" role="Birmingham" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_2.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis urna a lorem vestibulum blandit. Nulla facilisi. In convallis viverra quam, vel placerat dolor sagittis at. Integer suscipit magna et elit molestie luctus. Donec aliquet congue purus. Cras tempus, libero.
+
+					[/blockquote]
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Malcolm Anderson" role="Luton" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_3.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque, turpis at sagittis hendrerit, lectus turpis semper magna, at euismod massa nunc a augue. Quisque.
+
+					[/blockquote]
+					[/column]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Nico Tate" role="Sunderland" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_4.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris turpis, cursus vitae volutpat quis, porttitor eu erat. Nulla eu metus at ligula rhoncus euismod.
+
+					[/blockquote]
+					[/column]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Carlton Mehmet" role="Wolverhampton" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_5.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum dui, dignissim sed condimentum vitae, posuere sed magna. Phasellus ornare est vitae nisi fermentum malesuada.
+
+					[/blockquote]
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Kenneth Rex" role="Wolverhampton" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_6.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum dui, dignissim sed condimentum vitae, posuere sed magna. Phasellus ornare est vitae nisi fermentum malesuada.
+
+					[/blockquote]
+					[/column]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Taio Gregor" role="Luton" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_7.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque, turpis at sagittis hendrerit, lectus turpis semper magna, at euismod massa nunc a augue. Quisque.
+
+					[/blockquote]
+					[/column]
+					[column width="one-third"]
+					[blockquote type="testimonial" author="Sami Lukas" role="Sunderland" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_8.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris turpis, cursus vitae volutpat quis, porttitor eu erat. Nulla eu metus at ligula rhoncus euismod.
+
+					[/blockquote]
+					[/column]
+
+					[/row]
+					</textarea>
+
+				<h4>Services</h4>
+
+					<textarea class="copypaste">[row]
+					[column width="one-third"]
+					[teaser title="Training" link="#" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/service_training.jpg"]
+					Pellentesque fringilla dapibus pretium. Curabitur rutrum, ligula quis vehicula lacinia, quam lacus cursus quam, vitae adipiscing magna enim et ligula. Quisque eget molestie orci. Suspendisse.[/teaser]
+					[/column]
+					[column width="one-third"]
+					[teaser title="Consultancy" link="#" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/service_consultancy.jpg"]
+					Praesent hendrerit, mauris in condimentum egestas, mi lorem posuere urna, nec tincidunt velit sapien vel ipsum. Vestibulum a lectus augue, et rhoncus justo. Integer tristique.[/teaser]
+					[/column]
+					[column width="one-third"]
+					[teaser title="Seminars" link="#" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/service_seminars.jpg"]
+					Integer neque lorem, malesuada ut tincidunt vitae, congue non sapien. Proin porttitor vestibulum egestas. Duis placerat suscipit augue. Integer eget velit id nisl blandit elementum.[/teaser]
+					[/column]
+					[/row]
+
+					[band variation="alternative"]
+
+					[row]
+					[column width="eight-tenth" offset="one-tenth"]
+					<div style="text-align: center;">
+					<h2>What our clients say…</h2>
+					Cras egestas mattis bibendum. Etiam eget tellus massa. Nulla sit amet leo et nibh volutpat elementum. Aliquam est tortor, hendrerit at lacinia eu, pharetra sed diam. Nunc ut erat turpis, a aliquam libero.
+
+					</div>
+					[/column]
+					[/row]
+
+					[hr style="shadow"]
+
+					[row]
+					[column width="one-half"]
+					[blockquote type="testimonial" author="Kacper Atlas" role="Southport" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_1.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum feugiat ornare. Duis sagittis, est vitae euismod rhoncus, orci turpis cursus libero, ut tempor mi nibh at massa. Suspendisse accumsan nulla eget metus tempus commodo. Cras a dui velit, vitae.
+
+					[/blockquote]
+					[/column]
+					[column width="one-half"]
+					[blockquote type="testimonial" author="Brandan Carlton" role="Birmingham" image="http://www.euged.com/demo/metrolium/wp-content/uploads/2013/04/testimonial_2.jpg"]
+
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis urna a lorem vestibulum blandit. Nulla facilisi. In convallis viverra quam, vel placerat dolor sagittis at. Integer suscipit magna et elit molestie luctus. Donec aliquet congue purus. Cras tempus, libero.
+
+					[/blockquote]
+					[/column]
+					[/row]
+
+					[band variation="default"]
+
+					[gap]
+					[callout title="Need a bespoke solution?" buttontext="Get in touch!" buttonlink="#"]We can offer a tailor made package to suit your exact needs[/callout]
+					</textarea>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-sliders">Sliders</h2>
+
+				<p>Within the Metrolium theme, there are two included premium slider plugins, <strong>LayerSlider</strong> and <strong>Slider Revolution</strong>. Both of these plugins are fantastically powerful and great at what they do.</p>
+
+				<p class="notice warning">For instructions on how to install and activate these two plugins, read the <a href="#sec-suggested-plugins">Suggested Plugins</a> section</p>
+
+				<p>The documentation for both of these plugins is far beyond the scope for this documentation. However we have included links to the developers own documentation pages below.</p>
+
+				<h3 id="sec-layerslider">LayerSlider</h3>
+
+				<p>Taken from the LayerSlider codecanyon page:</p>
+
+				<blockquote>
+					<p>This is the WordPress plugin of LayerSlider! You can create as many layers and sublayers as you want. You can use unlimited images with links. The script is very user-friendly, you can add global settings or local (per slide) settings to each layer or sublayer. You can change delay times, easing types, durations and much more.</p>
+				</blockquote>
+
+				<p>You can view the LayerSlider documentation <a href="http://www.velvetinkmedia.com/wp-content/themes/vim/sliders/parallax/documentation/documentation.html" target="_blank">here</a></p>
+
+				<h3 id="sec-slider-revolution">Slider Revolution</h3>
+
+				<p>Taken from the Slider Revolution codecanyon page:</p>
+
+				<blockquote>
+					<p>Create a responsive(mobile friendly) or full width slider with must-see-effects and meanwhile keep or build your SEO optimisation (all content always readable for search engines). See the heaps of custom transitions/animations for each object on the page! Customize this slider with our convenient drag&amp;drop backend to your very needs.</p>
+					<p>This plugin features tons of unique transition effects, an image preloader, video embedding, autoplay that stops on user interaction and lots of easy to set options to create your own effects.</p>
+				</blockquote>
+
+				<p>You can view the Slider Revolution documentation <a href="http://www.ait-themes.com/doc/how-to-use-revolution-slider/" target="_blank">here</a></p>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-updating-metrolium">Updating Metrolium</h2>
+
+				<p>The best way to update your theme is via the Envato WordPress Toolkit. We covered the envato toolkit in section <strong>2.2.1</strong>.</p>
+
+				<p>By using the Envato WordPress Toolkit, the process of updating a theme is handled for you. The toolkit periodically checks to see if a new version is available, and informs you of any updates. Then it's just the simple task of clicking "Update" and the rest is done for you.</p>
+
+				<p>If you have the technical experience, you could update via FTP. This will require knowledge of your web servers FTP details, an FTP client along with knowledge of how to use it, and experience and knowledge in the best practices and processes of updating in order to protect yourself from technical or user error should something go wrong.</p>
+
+				<p class="notice error">Updating live files via FTP has its risks. Things can go wrong so make sure you take proper precations when working via FTP by making backups and checking site functionality as you go to ensure everything is still working.</p>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-shortcode-reference">Shortcode Reference</h2>
+
+				<h3>Accordion</h3>
+
+					<p>Accordions are great for showing a lot of content in a small space. Each accordion panel can be expanded to reveal the content inside. Each accordion should have a title.</p>
+
+					<textarea class="copypaste">
+						[accordions]
+							[accordion title="Accordion Number 1"]
+								*content*
+							[/accordion]
+							[accordion title="Accordion Number 2"]
+								*content*
+							[/accordion]
+							[accordion title="Accordion Number 3"]
+								*content*
+							[/accordion]
+						[/accordions]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>required</small> title</dt><dd>string of characters</dd>
+					</dl>
+
+				<h3>Band</h3>
+
+					<p>Bands are a great way to organise content into different sections (bands) and bring emphasis and a creative flare to it. Choose from the default or alternative variates, both of which are highly configurable from with the theme customizer.</p>
+
+					<textarea class="copypaste">
+						[band variation="alternative" inset="yes"]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>variation</dt><dd><u>default</u>, alternative</dd>
+						<dt>inset</dt><dd>yes, <u>no</u></dd>
+						<dt>backgroundimage</dt><dd>URL to image resource</dd>
+						<dt>bordertop</dt><dd>shorthand css border value</dd>
+						<dt>borderbottom</dt><dd>shorthand css border value</dd>
+						<dt>paddingtop</dt><dd>value with units (e.g. 3px)</dd>
+						<dt>paddingbottom</dt><dd>value with units (e.g. 3px)</dd>
+					</dl>
+
+				<h3>Blockquote</h3>
+
+					<p>Create a page of client testimonials or display your favourite quote aswell as everything in between. Two styles to choose from, a simple blockquote or a testimonial.</p>
+
+					<textarea class="copypaste">
+						[blockquote author="Richard Branson" role="Founder and Chairman"]
+							*content*
+						[/blockquote]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>type</dt><dd><u>blockquote</u>, testimonial</dd>
+						<dt><small>important</small> author</dt><dd>string of characters</dd>
+						<dt>role</dt><dd>string of characters</dd>
+						<dt>image</dt><dd>URL to image resource</dd>
+					</dl>
+
+				<h3>Blog</h3>
+
+					<p>Display blog posts in a grid like fashion. Choose how many to show, how many column, what order and many other options.</p>
+
+					<textarea class="copypaste">
+						[blog load="6" columns="3" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>columns</dt><dd>2, 3, <u>4</u>, 5</dd>
+						<dt>load</dt><dd>numeric value, or -1 to show all (<u>4</u>)</dd>
+						<dt>orderby</dt><dd>title, <u>date</u>, rand, random, menu_order, ID, author, none, modified, comment_count</dd>
+						<dt>order</dt><dd>asc, <u>desc</u></dd>
+						<dt>category</dt><dd>comma seperated list of category slugs</dd>
+						<dt>post_format</dt><dd>comma seperated list of post format names</dd>
+						<dt>id</dt><dd>comma seperated list of post ID's</dd>
+						<dt>showimage</dt><dd><u>yes</u>, no</dd>
+						<dt>showtitle</dt><dd><u>yes</u>, no</dd>
+						<dt>showdate</dt><dd><u>yes</u>, no</dd>
+						<dt>showexcerpt</dt><dd><u>yes</u>, no</dd>
+						<dt>excerpt_length</dt><dd>numeric value above 0 (<u>20</u>)</dd>
+						<dt>boxed</dt><dd><u>yes</u>, no</dd>
+					</dl>
+
+					<h5>ShowBiz Attributes</h5>
+
+					<dl class="tabular">
+						<dt>showbiz</dt><dd>yes, <u>no</u></dd>
+						<dt>sb_entry_size_offset</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_container_offset_right</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_height_offset_bottom</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_carousel</dt><dd>on, <u>off</u></dd>
+						<dt>sb_visible_elements_array</dt><dd>Defines how many entries are visible in the 4 different responsive levels (<u>4,3,2,1</u>)</dd>
+						<dt>sb_drag_and_scroll</dt><dd>on, <u>off</u></dd>
+						<dt>sb_navigation_side</dt><dd>left, <u>right</u>, center</dd>
+					</dl>
+
+				<h3>Box</h3>
+
+					<p>Great for bringing emphasis to a section of content. Choose any background colour, border colour and even make the box look inset into the page or outset on top of the page.</p>
+
+					<textarea class="copypaste">
+						[box borderradius="3px" padding="20px"]
+							*content*
+						[/box]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>borderradius</dt><dd>value with units (e.g. 3px)</dd>
+						<dt>padding</dt><dd>shorthand css padding value</dd>
+					</dl>
+
+				<h3>Break</h3>
+
+					<p>For adding line breaks in blocks of text to fine tune typographic layout and flow</p>
+
+					<textarea class="copypaste">
+						[br]
+					</textarea>
+
+				<h3>Button</h3>
+
+					<p>Hyperlink to any URL or resource online whilst picking from three preset colour ways, or provide a hex colour for compete control. You can easily link to internal WordPress resources simply by passing it the ID of the object. You can also link to any external resource by passing it the full URL.</p>
+
+					<textarea class="copypaste">
+						[button size="large" link="http://www.google.co.uk"] Visit Google [/button]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>important</small> link</dt><dd>URL or Object ID (<u>#</u>)</dd>
+						<dt>size</dt><dd>xsmall, small, <u>medium</u>, large</dd>
+						<dt>colour</dt><dd>gray, black, red, orange, yellow, green, blue, pink, purple</dd>
+						<dt>target</dt><dd>_blank, <u>_self</u>, _parent, _top</dd>
+					</dl>
+
+				<h3>Callout</h3>
+
+					<p>Entice your visitors to perform an action with the callout shortcode.</p>
+
+					<textarea class="copypaste">
+						[callout title="Buy one get one free" buttontext="Browse products" buttonlink="http://www.google.co.uk"]
+							Buy one product and get another product of the same value or less for free
+						[/callout]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>important</small> title</dt><dd>string of characters</dd>
+						<dt>icon</dt><dd>FontAwesome icon name (minus 'icon-' prefix) <a href="http://fortawesome.github.io/Font-Awesome/design.html" target="_blank">reference</a></dd>
+						<dt>boxed</dt><dd><u>yes</u>, no</dd>
+						<dt><small>important</small> buttontext</dt><dd>string of characters</dd>
+						<dt>buttonsize</dt><dd>xsmall, small, medium, <u>large</u></dd>
+						<dt><small>important</small> buttonlink</dt><dd>URL or Object ID (<u>#</u>)</dd>
+						<dt>buttontarget</dt><dd>_blank, <u>_self</u>, _parent, _top</dd>
+					</dl>
+
+				<h3>Clear</h3>
+
+					<p>Useful for fine tuning layouts. For a very technical and detailed explanation on what clearing means, view <a href="http://www.quirksmode.org/css/clearing.html">this page</a>.</p>
+
+					<textarea class="copypaste">
+						[clear]
+					</textarea>
+
+				<h3>Gap</h3>
+
+					<p>Handy for fine tuning the horizontal space between page elements without adding any visual clutter. The default height is 10px tall, but this can be easily changed to provide a larger gap.</p>
+
+					<textarea class="copypaste">
+						[gap height="20"]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>height</dt><dd>numerical value without units e.g. 20 (<u>10</u>)</dd>
+					</dl>
+
+				<h3>Horizontal Rule</h3>
+
+					<p>Great for organising content and pages into sections. Choose from three styles, a simple line, an elegant and subtle shadow effect or a line with an icon in the middle to add a more descriptive content divider.</p>
+
+					<textarea class="copypaste">
+						[hr style="icon" icon="star-empty"]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>style</dt><dd><u>line</u>, icon, shadow</dd>
+						<dt>icon</dt><dd>FontAwesome icon name (minus 'icon-' prefix) <a href="http://fortawesome.github.io/Font-Awesome/design.html" target="_blank">reference</a> (<u>star</u>)</dd>
+					</dl>
+
+				<h3>Icon List</h3>
+
+					<p>Very similar to the standard un-ordered and ordered lists you might be familiar with, but this list enables you to specify icons for each individual item. If no icon is specified it defaults to a tick.</p>
+
+					<textarea class="copypaste">
+						[icon_list]
+							[item icon="glass"] *content* [/item]
+							[item icon="music"] *content* [/item]
+							[item icon="search"] *content* [/item]
+						[/icon_list]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>icon</dt><dd>FontAwesome icon name (minus 'icon-' prefix) <a href="http://fortawesome.github.io/Font-Awesome/design.html" target="_blank">reference</a> (<u>ok</u>)</dd>
+					</dl>
+
+				<h3>Lead</h3>
+
+					<p>Highlight the start of a page or blog post the with lead shortcode.</p>
+
+					<textarea class="copypaste">
+						[lead] *content* [/lead]
+					</textarea>
+
+				<h3>Notice</h3>
+
+					<p>Have anything you want to be particulary visible to the customer? Perhaps they have just completed a form succesfully, or you performing some maintenance on the site and you want to let customers know.</p>
+
+					<textarea class="copypaste">
+						[notice type="warning"] *content* [/notice]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>type</dt><dd>error, success, warning, <u>default</u></dd>
+					</dl>
+
+				<h3>Person</h3>
+
+					<p>Great for constructing a team members page. All social links and emails are optional.</p>
+
+					<textarea class="copypaste">
+						[person name="Richard Branson" role="Founder and Chairman" email="richard@virgin.com" twitter="https://twitter.com/richardbranson" ] *content* [/person]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>important</small> link</dt><dd>URL</dd>
+						<dt>boxed</dt><dd><u>yes</u>, no</dd>
+						<dt><small>important</small> image</dt><dd>URL to image resource</dd>
+						<dt><small>important</small> name</dt><dd>string of characters</dd>
+						<dt>role</dt><dd>string of characters</dd>
+						<dt>email</dt><dd>email address</dd>
+						<dt>twitter</dt><dd>full URL to Twitter profile</dd>
+						<dt>facebook</dt><dd>full URL to Facebook profile</dd>
+						<dt>linkedin</dt><dd>full URL to LinkedIn profile</dd>
+						<dt>googleplus</dt><dd>full URL to GooglePlus profile</dd>
+					</dl>
+
+				<h3>Portfolio</h3>
+
+					<p>Display portfolio projects in a grid like fashion. Choose how many to show, how many column, what order and many other options.</p>
+
+					<textarea class="copypaste">
+						[portfolio load="6" columns="3" showexcerpt="no" boxed="no" orderby="rand" id="200,194,202,191"]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>columns</dt><dd>2, 3, <u>4</u>, 5</dd>
+						<dt>load</dt><dd>numeric value, or -1 to show all (<u>4</u>)</dd>
+						<dt>orderby</dt><dd>title, <u>date</u>, rand, random, menu_order, ID, author, none, modified, comment_count</dd>
+						<dt>order</dt><dd><u>asc</u>, desc</dd>
+						<dt>category</dt><dd>comma seperated list of category slugs</dd>
+						<dt>id</dt><dd>comma seperated list of post ID's</dd>
+						<dt>showtitle</dt><dd><u>yes</u>, no</dd>
+						<dt>showdate</dt><dd><u>yes</u>, no</dd>
+					</dl>
+
+					<h5>ShowBiz Attributes</h5>
+
+					<dl class="tabular">
+						<dt>showbiz</dt><dd>yes, <u>no</u></dd>
+						<dt>sb_entry_size_offset</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_container_offset_right</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_height_offset_bottom</dt><dd>px value (<u>0</u>)</dd>
+						<dt>sb_carousel</dt><dd>on, <u>off</u></dd>
+						<dt>sb_visible_elements_array</dt><dd>Defines how many entries are visible in the 4 different responsive levels (<u>4,3,2,1</u>)</dd>
+						<dt>sb_drag_and_scroll</dt><dd>on, <u>off</u></dd>
+						<dt>sb_navigation_side</dt><dd>left, <u>right</u>, center</dd>
+					</dl>
+
+				<h3>Pullquote</h3>
+
+					<p>Highlight a quote or short sentence from a page or blog post by pulling it either left or right within the page and adding some colour. The rest of the article wraps around the pullquote giving it a great look.</p>
+
+					<textarea class="copypaste">
+						[pullquote align="right"] *content* [/pullquote]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt>align</dt><dd><u>left</u>, right</dd>
+					</dl>
+
+				<h3>Row/Columns</h3>
+
+					<textarea class="copypaste">
+						[row]
+							[column width="one-quarter"] *content* [/column]
+							[column width="one-half"]
+								[subrow]
+									[subcolumn width="one-half"] *content* [/subcolumn]
+									[subcolumn width="one-half"] *content* [/subcolumn]
+								[/subrow]
+							[/column]
+							[column width="one-quarter"] *content* [/column]
+						[/row]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>important</small> width</dt><dd><u>one-half</u>, three-eighth, four-tenth, one-third, etc</dd>
+						<dt>offset</dt><dd>one-half, three-eighth, four-tenth, one-third, etc</dd>
+						<dt>linearise</dt><dd><u>yes</u>, no</dd>
+					</dl>
+
+				<h3>Tabs</h3>
+
+					<p>Tabs are great for showing a lot of content in a small space. Flick between tabs to reveal the underlying content. You can also add an optional icon to each tab.</p>
+
+					<textarea class="copypaste">
+						[tabs]
+							[tab title="Music" icon="music"] *content* [/tab]
+							[tab title="Biography"] *content* [/tab]
+							[tab title="Contact Details"] *content* [/tab]
+						[/tabs]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>required</small> title</dt><dd>string of characters</dd>
+						<dt>icon</dt><dd>FontAwesome icon name (minus 'icon-' prefix) <a href="http://fortawesome.github.io/Font-Awesome/design.html" target="_blank">reference</a></dd>
+					</dl>
+
+				<h3>Tag List</h3>
+
+					<textarea class="copypaste">
+						[tag_list]
+							[tag] *content* [/tag]
+							[tag] *content* [/tag]
+							[tag] *content* [/tag]
+						[/tag_list]
+					</textarea>
+
+				<h3>Teaser</h3>
+
+					<p>A teaser is a great way to construct a portal page that will help your visitors get to where they want to go faster, wheather its a list of your services, products or any other sub page.</p>
+
+					<textarea class="copypaste">
+						[teaser title="Services" link="http://www.google.co.uk"]
+							*content*
+						[/teaser]
+					</textarea>
+
+					<h5>Attributes</h5>
+
+					<dl class="tabular">
+						<dt><small>important</small> title</dt><dd>string of characters</dd>
+						<dt><small>important</small> link</dt><dd>URL or Object ID</dd>
+						<dt><small>important</small> image</dt><dd>URL to image resource</dd>
+						<dt>boxed</dt><dd><u>yes</u>, no</dd>
+						<dt>target</dt><dd>_blank, <u>_self</u>, _parent, _top</dd>
+					</dl>
+
+			</div>
+		</div>
+
+		<div class="band padded">
+			<div class="inner typography">
+
+				<h2 id="sec-sources-credits">Sources &amp; Credits</h2>
+
+				<ul>
+					<li><strong><a target="_blank" href="http://codecanyon.net/item/layerslider-responsive-wordpress-slider-plugin-/1362246">LayerSlider</a></strong> - Responsive WordPress Slider Plugin</li>
+					<li><strong><a target="_blank" href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Slider Revolution</a></strong> - Responsive WordPress Slider Plugin</li>
+					<li><strong><a target="_blank" href="http://www.woothemes.com/flexslider/">FlexSlider</a></strong> - An awesome, fully responsive jQuery slider toolkit.</li>
+					<li><strong><a target="_blank" href="http://fitvidsjs.com/">FitVids</a></strong> - A lightweight, easy-to-use jQuery plugin for fluid width video embeds</li>
+					<li><strong><a target="_blank" href="https://github.com/thomasgriffin/TGM-Plugin-Activation">TGM Plugin Activation</a></strong> - an efficient way to allow WordPress theme authors to reference and include required plugins within their themes.</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+
+	<a id="backtotop" href="#intro" style="display: none;"><i class="icon-chevron-up"></i></a>
+
+	<script>
+	$(document).ready(function() {
+		$("#trigger").on('click', function( e ) {
+			e.preventDefault();
+			$("#contents").toggleClass('shown');
+			$("#contents").toggleClass('hidden');
+		});
+
+		$('#contents ul').hide();
+		$('#contents li.has-submenu > a').on('click', function() {
+			$(this).parent().children('ul').toggle();
+			return false;
+		});
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 600) {
+				$('#backtotop').fadeIn('slow');
+			} else {
+				$('#backtotop').fadeOut('slow');
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+body { position: relative; }
+
+#live-options-toggle { -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; width: 50px; height: 50px; line-height: 50px; text-align: center; color: #29bdca; background: #f2f2f2; position: fixed; top: 200px; z-index: 9001; cursor: pointer; font-size: 20px; }
+#live-options-toggle.active { left: 0; }
+#live-options-toggle.inactive { left: -50px; }
+#live-options-toggle:hover { background: #FFF; padding-left: 10px; width: 60px; }
+
+#live-options { -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); background-color: #f2f2f2; bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; max-height: 100%; overflow: scroll; left: -225px; position: fixed; top: 0; width: 225px; z-index: 9000; }
+#live-options #lobuttons { *zoom: 1; border-bottom: 1px solid #DDD; padding: 15px; }
+#live-options #lobuttons:before, #live-options #lobuttons:after { display: table; content: ""; line-height: 0; }
+#live-options #lobuttons:after { clear: both; }
+#live-options #lobuttons .button { background-color: #fafafa; color: #666 !important; float: right; font-size: 11px; font-weight: normal; padding: 5px 10px; }
+#live-options #lobuttons .button:hover { background-color: #e0e0e0; }
+#live-options #lobuttons .button.disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; cursor: default; }
+#live-options #lobuttons .button.disabled:hover { background-color: #fafafa; }
+#live-options #lobuttons .button.disabled:active, #live-options #lobuttons .button.disabled:focus { -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3); box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3); }
+#live-options #lobuttons .button#loclose { float: left; }
+#live-options #loptions > li { font-size: 12px; margin: 0; padding: 0; }
+#live-options #loptions > li a.lo-title { border-color: #FFF #FFF #DFDFDF; border-style: solid; border-width: 1px 0; -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; text-shadow: 0 1px 0 white; background-color: #f2f2f2; color: #444; display: block; font-size: 13px; font-weight: bold; padding: 10px 36px 10px 15px; position: relative; outline: none; }
+#live-options #loptions > li a.lo-title .icon-chevron-down { color: #CCC; position: absolute; margin-top: -7px; right: 10px; top: 50%; }
+#live-options #loptions > li a.lo-title:hover, #live-options #loptions > li a.lo-title.ui-accordion-header-active { text-shadow: none; background-color: #29bdca; border-color: #29bdca; color: #FFF; }
+#live-options #loptions > li a.lo-title:hover .icon-chevron-down, #live-options #loptions > li a.lo-title.ui-accordion-header-active .icon-chevron-down { color: #FFF; }
+#live-options #loptions > li ul { background-color: #fafafa; border-bottom: 1px solid #DDD; display: none; list-style: none; margin: 0; padding: 10px 15px; }
+#live-options #loptions #preview-notice ul { padding: 15px; }
+#live-options #loptions #preview-notice p { margin: 0 0 15px; }
+#live-options #loptions #preview-notice p:last-child { margin-bottom: 0; }
+#live-options #loptions #preview-notice p.lead { font-size: 130%; }
+#live-options #loptions #preview-notice p strong { color: #29bdca; }
+#live-options #loptions .euged-control-title { color: #444; display: block; font-weight: bold; line-height: 24px; }
+#live-options #loptions .euged-control { margin: 0 0 8px; }
+#live-options #loptions .euged-control-radio { padding: 5px 0 10px; }
+#live-options #loptions fieldset { border: none; margin: 0; padding: 0; }
+#live-options #loptions textarea, #live-options #loptions select, #live-options #loptions input[type="date"], #live-options #loptions input[type="datetime"], #live-options #loptions input[type="datetime-local"], #live-options #loptions input[type="email"], #live-options #loptions input[type="month"], #live-options #loptions input[type="number"], #live-options #loptions input[type="password"], #live-options #loptions input[type="search"], #live-options #loptions input[type="tel"], #live-options #loptions input[type="text"], #live-options #loptions input[type="time"], #live-options #loptions input[type="url"], #live-options #loptions input[type="week"] { border: 1px solid #DDD; padding: 7px 10px 6px; }
+#live-options #loptions textarea:focus, #live-options #loptions select:focus, #live-options #loptions input[type="date"]:focus, #live-options #loptions input[type="datetime"]:focus, #live-options #loptions input[type="datetime-local"]:focus, #live-options #loptions input[type="email"]:focus, #live-options #loptions input[type="month"]:focus, #live-options #loptions input[type="number"]:focus, #live-options #loptions input[type="password"]:focus, #live-options #loptions input[type="search"]:focus, #live-options #loptions input[type="tel"]:focus, #live-options #loptions input[type="text"]:focus, #live-options #loptions input[type="time"]:focus, #live-options #loptions input[type="url"]:focus, #live-options #loptions input[type="week"]:focus { -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); }
+#live-options #loptions input[type="radio"], #live-options #loptions input[type="checkbox"] { margin-right: 8px; }
+#live-options #loptions .wp-picker-container * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+#live-options #loptions .wp-picker-container .wp-picker-input-wrap input { height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; }
+#live-options #loptions .wp-picker-container .wp-picker-input-wrap input[type="text"].color-picker-hex { width: 55px; font-family: monospace; }
+#live-options #loptions .wp-picker-container .iris-picker { width: 176px !important; height: 150px !important; padding-bottom: 0 !important; }
+#live-options #loptions .wp-picker-container .iris-picker .iris-square-handle { left: -7px; top: -7px; }
+#live-options #loptions .wp-picker-container .iris-picker .iris-square { margin-right: 10px; width: 130px !important; height: 130px !important; }
+#live-options #loptions .wp-picker-container .iris-picker .iris-slider { width: 15px !important; height: 130px !important; }
+#live-options #loptions .wp-picker-container .iris-picker .iris-palette-container { display: none; }

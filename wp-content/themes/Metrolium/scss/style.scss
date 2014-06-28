@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// Setup
+@import "compass/css3";
+
+// Skin
+@import "skins/default";
+
+// Functionality
+@import "libs/mixins";
+@import "libs/functions";
+
+// Libs
+@import "libs/reset";
+@import "libs/normalize";
+@import "libs/formalize";
+@import "libs/grid";
+@import "libs/flexslider";
+@import "libs/isotope";
+@import "libs/mobile-menu";
+@import "libs/showbiz";
+
+// Parts
+@import "parts/footer";
+@import "parts/forms";
+@import "parts/global";
+@import "parts/header";
+@import "parts/shortcodes";
+@import "parts/sliders";
+@import "parts/typography";
+@import "parts/widgets";
+
+// Post Types
+@import "post-types/post";
+@import "post-types/portfolio";
+
+.textalign-c { text-align: center; }
+
+
+[class^="icon-"], [class*=" icon-"] {
+	@include transition(background-color 0.2s);
+
+	&.icon-96px {
+		background: #EEE;
+		color: #999;
+		display: block;
+		font-size: 48px;
+		height: 96px;
+		line-height: 96px;
+		margin: 0 auto 15px;
+		text-align: center;
+		width: 96px;
+
+		&.icon-rounded {
+			border-radius: 96px;
+		}
+	}
+}
+
+a {
+	&.body-color {
+		color: #404040 !important;
+
+		&:hover {
+			color: #29BDCA !important;
+		}
+	}
+
+	&:hover {
+		[class^="icon-"], [class*=" icon-"] {
+			&.icon-96px {
+				background-color: #29BDCA;
+				color: #FFF;
+			}
+		}
+	}
+}

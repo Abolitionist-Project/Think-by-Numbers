@@ -1,0 +1,21 @@
+.isotope,
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	@include transition-duration(0.25s);
+}
+
+.isotope {
+	@include transition-property(height, width);
+}
+
+.isotope .isotope-item {
+	@include transition-property(transform, opacity);
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+	@include transition-duration(0s);
+}

@@ -1,0 +1,370 @@
+/*
+Theme Name: 	Metrolium - Quantimodo
+Theme URI: 	http://www.euged.com/wordpress-themes/metrolium
+Description: 	Modern, metro, multi-purpose responsive WordPress theme. Beautifully designed, lovingly coded and absolutely bursting with functionality. As though that's not enough, you'll also receive free updates and <a href="http://www.euged.com/support" target="_blank">great support</a> to boot. What more could you possibly want? ;)
+Version: 	1.2.1
+Author: 	Euged.com
+Author URI: 	http://www.euged.com
+License:	GNU General Public License version 3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+Template:	Metrolium
+*/
+
+/************************************/
+/*             INFO BAR             */
+/************************************/
+.infobar .search input{
+    width: 100%; 
+    height: 30px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.infobar .search button{
+    height: 30px;
+    width: 35px;
+    padding: 0;
+    line-height: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/************************************/
+/*              HEADER              */
+/************************************/
+#banner .logo {
+    margin: 2px 0 0 0;
+}
+
+/************************************/
+/*            NAVIGATION            */
+/************************************/
+nav.login { padding-left: 16px; text-align: left; font-size: 16px; }
+nav.login .placeholder { height: 40px; line-height: 40px; padding: 0 15px; text-align: center; background-color: #f2f2f2; overflow: hidden; }
+nav.login #login-navigation { *zoom: 1; display: none; }
+nav.login #login-navigation:before, nav.login #login-navigation:after { display: table; content: ""; line-height: 0; }
+nav.login #login-navigation:after { clear: both; }
+nav.login #login-navigation ul { list-style: none; margin: 0; }
+@media only screen and (min-width: 768px) { nav.login { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; float: right; margin: 5px 0; }
+                                            nav.login #login-navigation { display: block; }
+                                            nav.login #login-navigation ul li { float: left; position: relative; }
+                                            nav.login #login-navigation ul li a { color: white; background-color: #29bdca; display: block; padding: 10px 15px; margin: 0; }
+                                            nav.login #login-navigation ul li.has-sub-menu > a:after { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33); opacity: 0.33; font-family: 'FontAwesome'; content: "\f0d7"; margin-left: 7px; font-size: 12px; line-height: 1em; }
+                                            nav.login #login-navigation ul li:hover > a { color: white; background-color: #F15A2A; }
+                                            nav.login #login-navigation ul li:hover > .sub-menu { left: 0; }
+                                            nav.login #login-navigation ul li:hover > .sub-menu li.has-sub-menu > a:after { content: "\f0da"; position: absolute; right: 10px; line-height: inherit; }
+                                            nav.login #login-navigation ul li:hover > .sub-menu li:hover > .sub-menu { left: 200px; }
+                                            nav.login #login-navigation ul li ul.sub-menu { -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); background-color: #29bdca; width: 200px; position: absolute; top: 40px; left: -9999px; z-index: 300; padding-left: 0; margin: 0; }
+                                            nav.login #login-navigation ul li ul.sub-menu li { float: none; }
+                                            nav.login #login-navigation ul li ul.sub-menu li a { border: none; color: white; background-color: #29bdca; padding: 6px 15px; }
+                                            nav.login #login-navigation ul li ul.sub-menu li:hover > a { color: white; background-color: #2095a0; }
+                                            nav.login #login-navigation ul li ul.sub-menu li ul { top: 0; left: -9999px; } }
+
+/************************************/
+/*              LANDING             */
+/************************************/
+.qmHero{
+    background: #FFF;
+    color: #999;
+    display: block;
+    font-size: 48px;
+    height: 210px;
+    line-height: 210px;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 210px;
+    -webkit-transition: background-color 0.2s; 
+    -moz-transition: background-color 0.2s; 
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    border-radius: 210px;
+    box-shadow: 0 0 25px #ccc;
+}
+#qmHero-synergize:hover{
+    background: #FFCB32;
+}
+#qmHero-visualize:hover{
+    background: #FF6565;
+}
+#qmHero-analyze:hover{
+    background: #989832;
+}
+.qmHero-desc{
+    color: #555;
+}
+#qmHero-title-synergize:first-letter{
+    color: #FFCB32;
+    font-size: 40px;
+}
+#qmHero-title-visualize:first-letter{
+    color: #FF6565;
+    font-size: 40px;
+}
+#qmHero-title-analyze:first-letter{
+    color: #989832;
+    font-size: 40px;
+}
+#landingPortfolio .image {
+    height: 137px;
+}
+@media only screen and (max-width: 768px) {
+    #landingPortfolio .grid-item {
+        width: 25%;
+    }
+}
+/************************************/
+/*       FANCY TEXT GOES HERE       */
+/************************************/
+.textontop{
+    -moz-text-shadow: 0px 1px 1px #bbb;
+    -webkit-text-shadow: 0px 1px 1px #bbb;
+    text-shadow: 0px 1px 1px #bbb;
+}
+
+/************************************/
+/*      VARIOUS METROLIUM MODS      */
+/************************************/
+.band{
+    background-size: cover;
+}
+.callout{
+    -moz-box-shadow: 0 0 25px #ccc;
+    -webkit-box-shadow: 0 0 25px #ccc;
+    box-shadow: 0 0 25px #ccc;
+}
+/************************************/
+/*      OTHER WIDGET OVERRIDES      */
+/************************************/
+/* Get rid of "Connect with:" text of Social Login */
+#wp-social-login-connect-with{
+    display: none;
+}
+
+.setButton {      
+    cursor: pointer;       
+    border: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+.setButton:hover{
+    color: #29bdca;
+}
+
+#login-dialog {
+    height:auto !important;
+}
+
+#accordion-content-rangepickers .ui-state-active {    
+    border: 1px solid #22BDCA !important;
+    background:#22BDCA !important; 
+    font-weight: bold !important;
+    color: #ffffff !important;
+}
+
+
+
+
+
+/************************************/
+/*      Register Page override      */
+/************************************/
+.bp_register #buddypress .standard-form #basic-details-section, 
+.bp_register #buddypress .standard-form #blog-details-section, 
+.bp_register #buddypress .standard-form #profile-details-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    margin-top: 20px;
+}
+
+.bp_register #buddypress #signup_form {
+    background: white;
+    padding-top: 20px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+
+    border-top: 4px solid #2095A0;
+}
+.bp_register #buddypress #signup_form > p {
+    margin: 0 20px 0 20px;
+    font-size: 14px;
+    color: #777;
+}
+.bp_register #buddypress #signup_form #wp-social-login-connect-options {
+    margin: 0 20px;
+}
+
+.bp_register #buddypress .register-section h4 {
+    color: #2095A0 !important;
+    font-weight: bold;
+}
+
+.bp_register #buddypress .standard-form label, 
+.bp_register #buddypress .standard-form span.label {
+    font-size: 14px;
+    color: #777;
+    font-weight: normal;
+    margin-bottom: 3px;
+    margin-top: 15px;
+}
+
+.bp_register #buddypress .register-section input {
+    background: #fbfbfb !important;
+}
+
+.bp_register #buddypress .standard-form#signup_form input[type=text], 
+.bp_register #buddypress .standard-form#signup_form textarea, 
+.bp_register #buddypress .form-allowed-tags, 
+.bp_register #buddypress #commentform input[type=text], 
+.bp_register #buddypress #commentform textarea {
+    width: 100%;
+}
+
+.bp_register #buddypress .standard-form#signup_form div div.error {
+    width: 100%;
+}
+
+.bp_register .band.default {
+    background-color: #F0F0F0 !important;
+    padding-bottom: 20px;
+}
+
+.bp_register #buddypress .standard-form div.submit {
+    clear: none;
+    width: 48%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 0;
+    float: left;
+}
+.bp_register #buddypress .standard-form div.submit input {
+    width: 100%;
+    font-size: 30px;
+    padding: 25px;
+}
+
+.portfolio.isotope-grid.grid .isotope-item 
+{
+    width:180px !important;
+    height: 180px !important;
+
+}
+
+.portfolio-tools.isotope-grid.grid .isotope-item 
+{
+    width:160px !important;
+    height: 190px !important;
+    overflow: hidden;
+}
+
+.portfolio.isotope-grid {
+    margin-left: -10px !important;
+}
+
+article.portfolio.archive.grid .meta .title {
+    font-size: 12px !important;
+}
+
+/****************************************************
+* Navigation
+****************************************************/
+@media (min-width: 768px) {       
+    #portfolio-menu-for-small-screen {
+        display:none;
+    } 
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    #portfolio-menu-for-wide-screen {
+        display:none;
+    }         
+}
+
+/* iPad Landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+/* CSS */
+}
+
+/* iPad Portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+/* CSS */
+}
+
+#tools-navigation { background-color: white; }
+
+/****************************************************
+* Primary Navigation
+****************************************************/
+nav.primary-tools { text-align: left; font-size: 12px; }
+nav.primary-tools .placeholder { height: 40px; line-height: 40px; padding: 0 15px; text-align: center; background-color: #f2f2f2; overflow: hidden; }
+nav.primary-tools #tools-primary-navigation { *zoom: 1; display: none; }
+nav.primary-tools #tools-primary-navigation:before, nav.primary-tools #tools-primary-navigation:after { display: table; content: ""; line-height: 0; }
+nav.primary-tools #tools-primary-navigation:after { clear: both; }
+nav.primary-tools #tools-primary-navigation ul { list-style: none; margin: 0; padding-left: 0px !important; }
+@media only screen and (min-width: 0px) and (max-width: 768px) { 
+  nav.primary-tools #tools-primary-navigation { display: block; }
+  nav.primary-tools #tools-primary-navigation ul li { float: left; position: relative; }
+  nav.primary-tools #tools-primary-navigation ul li a { color: gray; background-color: transparent; display: block; padding: 10px 15px; margin: 0; }
+  nav.primary-tools #tools-primary-navigation ul li.has-sub-menu > a:after { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33); opacity: 0.33; font-family: 'FontAwesome'; content: "\f0d7"; margin-left: 7px; font-size: 12px; line-height: 1em; }
+  nav.primary-tools #tools-primary-navigation ul li:hover > a { color: white; background-color: #29bdca; }
+  nav.primary-tools #tools-primary-navigation ul li:hover > .sub-menu { left: 0; }
+  nav.primary-tools #tools-primary-navigation ul li:hover > .sub-menu li.has-sub-menu > a:after { content: "\f0da"; position: absolute; right: 10px; line-height: inherit; }
+  nav.primary-tools #tools-primary-navigation ul li:hover > .sub-menu li:hover > .sub-menu { left: 200px; }
+  nav.primary-tools #tools-primary-navigation ul li ul.sub-menu { -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); background-color: #29bdca; width: 200px; position: absolute; top: 40px; left: -9999px; z-index: 300; padding-left: 0; margin: 0; }
+  nav.primary-tools #tools-primary-navigation ul li ul.sub-menu li { float: none; }
+  nav.primary-tools #tools-primary-navigation ul li ul.sub-menu li a { border: none; color: white; background-color: #29bdca; padding: 6px 15px; }
+  nav.primary-tools #tools-primary-navigation ul li ul.sub-menu li:hover > a { color: white; background-color: #2095a0; }
+  nav.primary-tools #tools-primary-navigation ul li ul.sub-menu li ul { top: 0; left: -9999px; } }
+
+  nav.primary-tools #tools-primary-navigation ul li a {background-color: #f2f2f2;color: #808080;}
+  
+  nav.filter nav.primary-tools #tools-primary-navigation ul li {margin-bottom: 0px; margin-right: 0px;}
+  
+  nav.filter nav.primary-tools #tools-primary-navigation ul li a { line-height: 20px; }
+ 
+  nav.filter-tools {padding: 0px !important;}  
+ 
+  .isotope-filter-selected { display: block; }
+  .isotope-filter-selected ul { padding-left: 0px !important;}
+  .isotope-filter-selected ul li { float: left; position: relative; }
+  .isotope-filter-selected ul li div { color: gray; background-color: transparent; display: block; padding: 10px 15px; margin: 0; line-height: 20px; }
+  
+  .isotope-filter-selected .remove-selected-category {cursor: pointer;  display: block;width: 12px;height: 13px;position: absolute;right: 0px;top: 14px;font-size: 1px;outline: none;background: url('css/images/tools-x.png') right top no-repeat;}
+  .isotope-filter-selected .remove-selected-category:hover {background-position: right -11px;}
+  
+  .choosen-category { display:none; margin-bottom: 0px !important;}   
+  
+  .customButtons { height:53px;} .buyfor {margin-bottom:  10px !important;}
+  
+  .customButtons:hover {
+      opacity:0.4;
+      filter:alpha(opacity=40);
+  }
+  
+  .xprofile { overflow-y: scroll !important; }
+  
+  .pdetailLeft { text-align:left;width:100%; }
+  
+  .pdetailLeft .row { margin-bottom:  5px; margin-top:5px;}
+  
+  .desc-title-heading {font-size: 1.5em;line-height: 18px;margin-bottom: 5px;}
+  
+  .screenshot { background-color: #F2F2F2;padding:10px; margin-bottom: 20px; }
+  
+  .screenshot-heading {font-size: 1.5em;line-height: 18px;margin-bottom: 18px;}
+ 
+ .screen-images-container { position: relative; width: 100%; white-space: nowrap; overflow-x: auto; overflow-y: hidden;}
+ 
+ .screen-images-container .image-wrapper { display: inline-block; white-space: normal; margin-left:10px;margin-right: 10px;}
+  
+ .screen-images-container .image-wrapper img { max-height: 570px; border: 1px solid #fff;-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.3);-moz-box-shadow: #999 0 3px 5px;border-color: #a2a2a2\9; margin-bottom: 5px; }
+ 

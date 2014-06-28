@@ -1,0 +1,3 @@
+@function pxtoem($px) {
+	@return $px / $site-text-size * 1em;
+}

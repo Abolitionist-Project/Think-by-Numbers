@@ -1,0 +1,331 @@
+/****************************************************
+* Global											*
+****************************************************/
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+/****************************************************
+* Buttons
+****************************************************/
+
+button,
+a.btn,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  background-image: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #29bdca;
+  border: none;
+  color: white !important;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+button:hover,
+a.btn:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  background-image: none;
+  background-color: #25a9b5;
+}
+
+
+/****************************************************
+* Form Styling										*
+****************************************************/
+
+label {
+	display: block;
+	float: left;
+}
+input[type="text"] {
+  height: 30px;
+  margin: 0;
+  padding: 0 8px;
+}
+
+input[type="checkbox"] {
+  margin: 6px 0 0;
+}
+
+textarea {
+	width: 397px;
+}
+
+.euged-control {
+  *zoom: 1;
+  border-bottom: 1px solid #eeeeee;
+  margin: 20px 25px;
+  padding: 0 0 20px;
+}
+.euged-control:before, .euged-control:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.euged-control:after {
+  clear: both;
+}
+.euged-control .euged-control-title {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 150px;
+}
+
+
+/****************************************************
+* Admin Panel										*
+****************************************************/
+
+#euged-admin {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  background-color: #303030;
+  margin: 20px 20px 20px 1px;
+  width: 800px;
+}
+
+
+/****************************************************
+* Admin Panel: Header								*
+****************************************************/
+
+#euged-admin-header {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  background-color: #29BDCA;
+  color: #FFF;
+  height: 80px;
+  padding: 0 20px;
+}
+#euged-admin-header h1 {
+  float: left;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+}
+#euged-admin-header button {
+	background-color: #DC1970;
+	font-size: 11px;
+	float: right;
+	line-height: 32px;
+	margin: 26px 0 0;
+}
+#euged-admin-header button:hover {
+	background-color: #9A114E;
+}
+
+
+/****************************************************
+* Admin Panel: Footer								*
+****************************************************/
+
+#euged-admin-footer {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  background-color: #EEE;
+  border: 1px solid #dddddd;
+  padding: 15px 20px;
+}
+#euged-admin-footer #euga-reset {
+	float: left;
+}
+#euged-admin-footer button {
+	background-color: #DC1970;
+	font-size: 11px;
+	float: right;
+	line-height: 32px;
+}
+#euged-admin-footer button:hover {
+	background-color: #9A114E;
+}
+
+
+/****************************************************
+* Admin Panel: Sidebar								*
+****************************************************/
+
+#euged-admin-sidebar {
+	border: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+#euged-admin-sidebar a {
+  color: #929292;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  padding: 0 15px 0 0;
+  text-decoration: none;
+  width: 185px;
+}
+#euged-admin-sidebar a:hover {
+	background-color: #464646;
+}
+#euged-admin-sidebar a span {
+	background-color: #464646;
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin: 0 15px 0 0;
+	text-align: center;
+	width: 40px;
+}
+#euged-admin-sidebar li {
+	background: transparent;
+	border: none;
+	float: none;
+	margin: 0;
+	position: static;
+	top: 0;
+}
+#euged-admin-sidebar li.ui-tabs-active a {
+  background-color: #FFF;
+  color: #555;
+}
+#euged-admin-sidebar li.ui-tabs-active a span {
+	background-color: #f2f2f2;
+}
+
+
+/****************************************************
+* Admin Panel: Content								*
+****************************************************/
+
+#euged-admin-content {
+  background-color: #FFF;
+  border-right: 1px solid #dddddd;
+  float: left;
+  line-height: 1.5;
+  min-height: 500px;
+  padding: 5px 0;
+  width: 599px;
+}
+#euged-admin-content .ui-tabs-panel {
+	padding: 0;
+}
+#euged-admin-content h1 {
+	line-height: 1;
+	margin-top: 0;
+}
+#euged-admin-content #help-buttons a {
+	background-color: #f8f8f8;
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 30px;
+	text-align: center;
+	text-decoration: none;
+	width: 204px;
+}
+#euged-admin-content #help-buttons a.euged-documentation {
+	margin-left: 0;
+}
+#euged-admin-content #help-buttons a:hover {
+	background-color: #EEE;
+}
+#euged-admin-content #help-buttons a i {
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+
+/****************************************************
+* Admin Panel: Sidebars Control						*
+****************************************************/
+
+#euged-sidebars-sortable {
+	margin: 0;
+}
+#euged-sidebars-sortable li {
+	background-color: #f2f2f2;
+	cursor: pointer;
+	padding: 10px 12px;
+	position: relative;
+}
+#euged-sidebars-sortable li:hover {
+	background-color: #29BDCA;
+	color: #FFF;
+}
+#euged-sidebars-sortable li .icon-reorder {
+	margin-right: 10px;
+}
+#euged-sidebars-sortable li .icon-remove {
+	color: #DDD;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#euged-sidebars-sortable li:hover .icon-remove {
+	color: #186e75;
+}
+#euged-sidebars-sortable li .icon-remove:hover {
+	color: #FFF;
+}
+.euged-control-sidebars-add {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.euged-control-sidebars-add .btn {
+	float: left;
+	margin-left: 10px;
+}

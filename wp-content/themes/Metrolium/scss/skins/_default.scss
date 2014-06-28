@@ -1,0 +1,213 @@
+//*************************************
+// Global Variables
+//*************************************
+$gutter: 30px;
+$margin: 20px;
+$accent: #29bdca;
+$site-text-colour: #808080;
+$copy-font: 'Open Sans';
+$detail-font: 'Raleway';
+$border: 1px;
+
+// Basic
+$site-width: 960px;
+
+$body-background-colour: #333;
+$site-text-size: 13px;
+$site-line-height: 160%;
+
+// Headings
+$heading-text-colour: #404040;
+$heading-h1-text-size: 40px;
+$heading-h2-text-size: 31px;
+$heading-h3-text-size: 25px;
+$heading-h4-text-size: 18px;
+$heading-h5-text-size: 16px;
+$heading-h6-text-size: 14px;
+
+
+//*************************************
+// Global
+//*************************************
+// List - Tags
+$list-tags-li-text-colour: #808080;
+$list-tags-li-background-colour: #e6e6e6;
+
+// DL - Tabular
+$dl-tabular-border-left-colour: #dfdfdf;
+
+// Comments
+$comment-header-background: #f2f2f2;
+$comment-content-background: #f2f2f2;
+
+// Social Icons
+$social-icon-text-colour: #808080;
+$social-icon-background-colour: #e6e6e6;
+
+// List - Links
+$list-links-li-background-colour: #F00;
+
+
+//*************************************
+// Header
+//*************************************
+// Banner
+$banner-background-colour: #FFF;
+
+// Navigation
+$navigation-background-colour: #FFF;
+
+// Primary Navigation
+$navigation-full-shadow: false;
+$navigation-full-link-text-colour: $site-text-colour;
+$navigation-full-link-text-hover-colour: #FFF;
+$navigation-full-link-background-hover-colour: $accent;
+$navigation-full-sub-link-text-colour: #FFF;
+$navigation-full-sub-link-background-colour: $accent;
+$navigation-full-sub-link-text-hover-colour: #FFF;
+$navigation-full-sub-link-background-hover-colour: darken($accent, 10%);
+
+// Hellobar
+$hellobar-background-colour: $accent;
+$hellobar-text-colour: #FFF;
+$hellobar-font-size: 11px;
+$hellobar-link-colour: darken($accent,15%);
+$hellobar-link-hover-colour: darken($accent,30%);
+$hellobar-close-button-size: 20px;
+$hellobar-close-button-colour: #FFF;
+
+// Infobar
+$infobar-background-colour: #f2f2f2;
+$infobar-text-colour: #808080;
+$infobar-font-size: 11px;
+$infobar-link-colour: $accent;
+$infobar-link-hover-colour: darken($accent,10%);
+$infobar-social-icon-size: 30px;
+$infobar-social-icon-text-colour: #808080;
+$infobar-social-icon-background-colour: #e6e6e6;
+
+// Titlebar
+$titlebar-background-colour: $accent;
+$titlebar-main-heading-text-colour: #FFF;
+$titlebar-main-heading-text-size: 31px;
+$titlebar-sub-heading-text-colour: lighten($accent,40%);
+$titlebar-sub-heading-text-size: 16px;
+$titlebar-button-background-colour: darken($accent,10%);
+$titlebar-link-colour: darken($accent,10%);
+$titlebar-link-hover-colour: darken($accent,20%);
+
+// Breadcrumbs
+$breadcrumbs-background-colour: darken($accent,10%);
+$breadcrumbs-text-colour: lighten($accent,30%);
+$breadcrumbs-font-size: 11px;
+$breadcrumbs-seperator-colour: darken($accent,30%);
+$breadcrumbs-link-colour: #FFF;
+$breadcrumbs-link-hover-colour: lighten($accent,30%);
+
+
+//*************************************
+// Footer
+//*************************************
+// Site Wide CTA
+$site-wide-cta-background-colour: lighten($accent, 30%);
+$site-wide-cta-text-colour: darken($accent, 15%);
+$site-wide-cta-font-size: 18px;
+$site-wide-cta-link-colour: $accent;
+$site-wide-cta-link-hover-colour: darken($accent, 5%);
+
+// Pre Footer
+$prefooter-background-colour: $accent;
+$prefooter-text-colour: #FFF;
+$prefooter-font-size: 25px;
+$prefooter-social-icon-size: 40px;
+$prefooter-social-icon-text-colour: #FFF;
+$prefooter-social-icon-background-colour: darken($accent, 10%);
+
+// Footer
+$footer-background-colour: #444;
+$footer-text-colour: #CCC;
+$footer-font-size: 12px;
+$footer-heading-text-colour: #FFF;
+$footer-link-colour: #bfbfbf;
+$footer-link-hover-colour: #d9d9d9;
+
+// Trim
+$trim-background-colour: #333;
+$trim-text-colour: #888;
+$trim-font-size: 11px;
+$trim-link-colour: #d6d6d6;
+$trim-link-hover-colour: #FFF;
+
+
+//*************************************
+// Shortcodes
+//*************************************
+// Accordion
+$accordion-bar-text-colour: $accent;
+$accordion-bar-background-colour: #f2f2f2;
+$accordion-icon-background-colour: #e6e6e6;
+
+// Box
+$box-background-colour: #f2f2f2;
+
+// Code
+$code-background-colour: #f2f2f2;
+
+// Horizontal Rules
+$hr-line-colour: #f2f2f2;
+
+// Notices
+$notice-default-background-colour: #f2f2f2;
+$notice-default-text-colour: #808080;
+$notice-error-background-colour: #F5DBDA;
+$notice-error-text-colour: darken(#F5DBDA,40%);
+$notice-success-background-colour: #D9F098;
+$notice-success-text-colour: darken(#D9F098,43%);
+$notice-warning-background-colour: #FDEFBE;
+$notice-warning-text-colour: darken(#FDEFBE,45%);
+
+// Blockquotes
+$testimonial-avatar-size: 60px;
+$testimonial-author-text-colour: #404040;
+
+// Profile
+$profile-background-colour: #FFF;
+
+// Teaser
+$teaser-background-colour: #FFF;
+
+// Callout
+$callout-background-colour: #f2f2f2;
+
+// Tabs
+$tabs-background-colour: #f2f2f2;
+
+
+//*************************************
+// Post Types
+//*************************************
+// Blog
+$blog-meta-background-colour: #F2F2F2;
+$blog-meta-icon-background-colour: #e6e6e6;
+$blog-archive-article-tab-size: 40px;
+$blog-archive-article-tab-background-colour: $accent;
+$blog-archive-article-tab-text-colour: #FFF;
+
+// Portfolio
+$portfolio-filter-link-text-colour: #808080;
+$portfolio-filter-link-background-colour: #F2F2F2;
+$portfolio-filter-link-text-hover-colour: #FFF;
+$portfolio-filter-link-background-hover-colour: $accent;
+
+$portfolio-article-slat-background-colour: #F2F2F2;
+
+
+//*************************************
+// Forms
+//*************************************
+// Inputs
+$form-label-text-colour: #404040;
+
+// Buttons
+$button-default-background-colour: $accent;
+$button-default-text-colour: #FFF;

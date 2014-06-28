@@ -1,0 +1,792 @@
+/****************************************************
+* Box
+****************************************************/
+.box {
+	padding: 20px;
+	margin-bottom: $gutter;
+	background-color: $box-background-colour;
+
+	&.inset {
+		@include box-shadow(inset 0 1px 2px rgba(0,0,0,0.2));
+	}
+
+	&.outset {
+		@include box-shadow(0 1px 2px rgba(0,0,0,0.2));
+	}
+}
+
+
+/****************************************************
+* Code
+****************************************************/
+.code {
+	overflow-x: auto;
+	padding: $margin;
+	margin-bottom: $gutter;
+	background-color: $code-background-colour;
+
+	pre {
+		margin-bottom: 0;
+	}
+
+	code {
+		white-space: pre;
+
+		br {
+			display: none;
+		}
+	}
+
+	&.inset {
+		@include box-shadow(inset 0 1px 2px rgba(0,0,0,0.2));
+	}
+
+	&.outset {
+		@include box-shadow(0 1px 2px rgba(0,0,0,0.2));
+	}
+}
+
+
+/****************************************************
+* Horizontal Rules
+****************************************************/
+hr,
+.hr {
+	height: 0;
+	background: none;
+	border-top: 1px solid $hr-line-colour;
+	margin: $gutter 0;
+
+	&.shadow {
+		border: none;
+		height: 4px;
+		background: {
+			image:url("../images/hr_shadow.png");
+			size: 100% 4px;
+			repeat: no-repeat;
+		};
+	}
+
+	&.icon {
+		text-align: center;
+
+		i {
+			color: darken($hr-line-colour,10%);
+			padding: 0 10px;
+			position: relative;
+			top: -10px;
+		}
+	}
+
+	@include min-screen-width(tablet-portrait) {
+		margin: $margin*2 0;
+	}
+}
+
+
+/****************************************************
+* Gap
+****************************************************/
+.gap {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+
+/****************************************************
+* Lead
+****************************************************/
+.lead {
+	font-size: 160%;
+	line-height: $site-line-height;
+}
+
+
+/****************************************************
+* Bands
+****************************************************/
+.band {
+	@include clearfix;
+	clear: both;
+	background: {
+		position: top center;
+		repeat: no-repeat;
+	}
+
+	&.padded {
+		padding-top: $gutter;
+		padding-bottom: $gutter - $margin;
+
+		&.thin {
+			padding-top: $gutter;
+			padding-bottom: $gutter;
+		}
+	}
+
+	&.default {
+		background-color: #FFF;
+	}
+
+	&.alternative {
+		background-color: #f2f2f2;
+	}
+
+	&.inset {
+		@include box-shadow(inset 0 4px 3px -3px rgba(0,0,0,0.2));
+	}
+
+	> .inner {
+		width: 100%;
+		max-width: $site-width + $gutter*2;
+		margin: 0 auto;
+		padding-left: $margin;
+		padding-right: $margin;
+	}
+
+	@include min-screen-width(tablet-portrait) {
+		&.padded {
+			padding-top: $gutter*1.5;
+			padding-bottom: $gutter*1.5 - $margin;
+		}
+
+		> .inner {
+			padding-left: $gutter;
+			padding-right: $gutter;
+		}
+	}
+}
+
+
+/****************************************************
+* Clear
+****************************************************/
+.clear {
+	clear: both;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+/****************************************************
+* Buttons
+****************************************************/
+button,
+a.button,
+div.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+	@include box-shadow(inset 0 -1px 1px rgba(0,0,0,0.3));
+	@include background-image(none);
+	@include border-radius(3px);
+	@include text-shadow(none);
+	@include transition(background-color 0.2s);
+	background-color: $button-default-background-colour;
+	border: none;
+	color: $button-default-text-colour !important;
+	font-size: $site-text-size;
+	line-height: 20px;
+	padding: 8px 15px;
+	text-align: center;
+	font-weight: 700;
+
+	&:hover {
+		@include box-shadow(inset 0 -1px 1px rgba(0,0,0,0.3));
+		@include background-image(none);
+		background-color: darken($button-default-background-colour, 5%);
+	}
+
+	&:active {
+		@include box-shadow(inset 0 1px 1px rgba(0,0,0,0.3));
+		@include background-image(none);
+		background-color: darken($button-default-background-colour, 5%);
+	}
+
+	$buttoncolors: (
+		/* name background-color color hover-color */
+		red			#d30000		#FFF,
+		orange		#d38b00		#FFF,
+		yellow		#d1d300		#FFF,
+		green		#63d300		#FFF,
+		blue		#0095d3		#FFF,
+		purple		#9a00d3		#FFF,
+		pink		#d3009a		#FFF,
+		gray		#BBB		#FFF,
+		black		#444		#FFF
+	);
+
+	@each $button in $buttoncolors
+	{
+		$name:				nth($button, 1);
+		$background-color:	nth($button, 2);
+		$color:				nth($button, 3);
+
+		&.#{$name} {
+			background-color: $background-color !important;
+			color: $color !important;
+
+			&:hover {
+				background-color: darken($background-color, 10%) !important;
+			}
+		}
+	}
+
+	&.xsmall {
+		font-size: 11px;
+		padding: 4px 11px;
+	}
+
+	&.small {
+		font-size: 13px;
+		padding: 6px 13px;
+	}
+
+	&.large {
+		font-size: 15px;
+		padding: 10px 19px;
+	}
+
+	&.square {
+		@include icon_style(36px);
+		padding: 0;
+	}
+}
+
+
+/****************************************************
+* Notices
+****************************************************/
+.notice {
+	@include border-radius(3px);
+	margin-bottom: $margin;
+	padding: 10px 13px;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		border-bottom: 1px dotted;
+
+		&:hover {
+			border-style: solid;
+		}
+	}
+
+	&.default	{
+		background: $notice-default-background-colour;
+		color: $notice-default-text-colour;
+
+		a {
+			color:$notice-default-text-colour !important;
+		}
+	}
+
+	&.error	{
+		background: $notice-error-background-colour;
+		color: $notice-error-text-colour;
+
+		a {
+			color:$notice-error-text-colour !important;
+		}
+	}
+
+	&.success {
+		background: $notice-success-background-colour;
+		color: $notice-success-text-colour;
+
+		a {
+			color:$notice-success-text-colour !important;
+		}
+	}
+
+	&.warning	{
+		background: $notice-warning-background-colour;
+		color: $notice-warning-text-colour;
+
+		a {
+			color:$notice-warning-text-colour !important;
+		}
+	}
+}
+
+
+/****************************************************
+* Blockquotes
+****************************************************/
+blockquote {
+	quotes: "“" "”";
+	@include blockquote_style();
+
+	p {
+		&:before {
+			content:"“";
+			content:open-quote
+		}
+
+		&:after {
+			content:"";
+			content:no-close-quote
+		}
+
+		&:last-of-type:after {
+			content:"”";
+			content:close-quote;
+		}
+	}
+}
+
+figure {
+
+	// Testimonial
+	&.testimonial {
+
+		blockquote {
+			font-size: $site-text-size;
+			text-align: left;
+		}
+
+		figcaption {
+			$figcaption-line-height: 20px;
+			$figcaption-padding: ($testimonial-avatar-size - $figcaption-line-height*2)/2;
+			line-height: $figcaption-line-height;
+			position: relative;
+
+			&.has-image {
+				padding: $figcaption-padding;
+				padding-left: $testimonial-avatar-size + 15px;
+				min-height: $testimonial-avatar-size;
+			}
+
+			.avatar {
+				@include border-radius($testimonial-avatar-size/2);
+				max-height: $testimonial-avatar-size;
+				max-width: $testimonial-avatar-size;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			p {
+				margin-bottom: 0;
+
+				&.author {
+					color: $testimonial-author-text-colour;
+					font-size: 15px;
+				}
+
+				&.role {
+					font-size: 11px;
+				}
+			}
+		}
+	}
+
+	// Blockquote
+	&.blockquote {
+
+		blockquote {
+			@include blockquote_style();
+		}
+
+		figcaption {
+
+			p.author {
+				text-align: center;
+				font-style: italic;
+
+				&:before { content: '\2014  '; }
+			}
+		}
+	}
+}
+
+
+/****************************************************
+* Profile
+****************************************************/
+.profile {
+	max-width: 400px;
+	margin: 0 auto $gutter auto;
+	overflow: hidden;
+
+	.image {
+		background: black;
+
+		img {
+			@include backface-visibility(hidden);
+			@include transition(opacity 0.25s);
+			width: 100%;
+			display: block;
+		}
+
+		a img:hover {
+			@include opacity(0.8);
+		}
+	}
+
+	.content {
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		.role {
+			@include opacity(0.6);
+			font-size: 11px;
+			margin-bottom: $margin / 2;
+		}
+
+		footer {
+			ul {
+				@include clearfix;
+				list-style: none;
+				padding: 0;
+
+				li {
+					float: left;
+					margin-right: 1px;
+
+					.social-icon {
+						color: inherit !important;
+
+						&:hover {
+							color: #FFF !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.boxed {
+		background-color: $profile-background-colour;
+
+		.content {
+			padding: $margin;
+
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.unboxed {
+
+		.image {
+			margin-bottom: $margin;
+		}
+	}
+
+	@include min-screen-width(tablet-portrait) {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+	}
+}
+
+
+/****************************************************
+* Accordion
+****************************************************/
+.accordions {
+	margin-bottom: $gutter;
+
+	.header {
+		margin-bottom: 1px;
+		font-size: $site-text-size;
+		background-color: $accordion-bar-background-colour;
+		color: $accordion-bar-text-colour;
+		outline: none;
+
+		a {
+			display:block;
+			padding: 10px;
+			padding-left: 50px;
+			position: relative;
+
+			i {
+				@include icon_style(40px);
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				background-color: $accordion-icon-background-colour;
+			}
+		}
+	}
+
+	.content {
+		margin-bottom: 1px;
+		background-color: rgba($accordion-bar-background-colour, 0.7);
+
+		.typography {
+			padding: $margin;
+
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/****************************************************
+* Tabs
+****************************************************/
+.tab-group {
+	margin-bottom: $gutter;
+
+	.tabs {
+		position: relative;
+		z-index: 20;
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				@include transition(opacity 0.15s);
+				@include opacity(0.5);
+				float:left;
+				margin-right: 1px;
+				background: $tabs-background-colour;
+
+				a {
+					display: block;
+					font-size: 11px;
+					line-height: 1em;
+					padding: 15px;
+				}
+
+				&.ui-tabs-active {
+					@include opacity(1);
+				}
+
+				&:hover {
+					@include opacity(1);
+				}
+			}
+		}
+	}
+
+	.panels {
+		position: relative;
+		z-index: 10;
+		clear: both;
+		padding: $margin;
+		background: $tabs-background-colour;
+
+		.panel {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+
+		*:last-child { margin-bottom: 0; };
+	}
+}
+
+
+/****************************************************
+* Tag List
+****************************************************/
+ul.tags {
+	padding-left: 0 !important;
+	margin-bottom: $margin - 7;
+	list-style: none;
+	overflow: hidden;
+
+	li { @include tag_style() }
+}
+
+
+/****************************************************
+* Icon List
+****************************************************/
+ul.iconlist {
+	text-indent: 0;
+	padding-left: 0 !important;
+	position: relative;
+	list-style: none;
+
+	li {
+		padding-left: 25px;
+
+		i {
+			position: absolute;
+			display: inline;
+			line-height: 1.539em;
+			width: 25px;
+			left: 0;
+		}
+	}
+}
+
+
+/****************************************************
+* Pullquote
+****************************************************/
+.pullquote {
+	max-width: 50%;
+	font-size: 120%;
+	line-height: 150%;
+	color: $accent;
+
+	&:before {
+		content:"“";
+		content:open-quote
+	}
+
+	&:after {
+		content:"”";
+		content:close-quote;
+	}
+
+	&.left { margin: 0 $margin $margin 0; }
+	&.right { margin: 0 0 $margin $margin; }
+
+	@include min-screen-width(tablet-portrait) {
+		font-size: 140%;
+		max-width: 30%;
+
+		&.left { margin: 0 $margin*1.5 $margin 0; }
+	&.right { margin: 0 0 $margin $margin*1.5; }
+	}
+}
+
+
+/****************************************************
+* Teaser
+****************************************************/
+.teaser {
+	max-width: 400px;
+	margin: 0 auto $gutter auto;
+	overflow: hidden;
+
+	.image {
+		background: black;
+
+		img {
+			@include backface-visibility(hidden);
+			@include transition(opacity 0.25s);
+			width: 100%;
+			display: block;
+		}
+
+		a img:hover {
+			@include opacity(0.8);
+		}
+	}
+
+	h3 {
+		margin-bottom: $margin / 2;
+	}
+
+	&.boxed {
+		background-color: $teaser-background-colour;
+
+		.content {
+			padding: $margin;
+			padding-bottom: 0;
+		}
+	}
+
+	&.unboxed {
+
+		.image {
+			margin-bottom: $margin;
+		}
+
+		.content {
+			*:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@include min-screen-width(tablet-portrait) {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+	}
+}
+
+
+/****************************************************
+* Callout
+****************************************************/
+.callout {
+	margin-bottom: $gutter;
+	overflow: hidden;
+	text-align: center;
+
+	.content {
+		margin-bottom: $margin;
+
+		h2 {
+			line-height: 30px;
+			margin-bottom: 0;
+		}
+
+		p {
+			line-height: 20px;
+			margin-bottom: 0;
+		}
+
+		&.has-icon {
+
+			.callout-icon {
+				@include icon_style(50px);
+				@include border-radius(25px);
+				margin: 0 auto $margin auto;
+				font-size: 20px;
+				color: #FFF !important;
+				background-color: $accent;
+			}
+		}
+	}
+
+	&.boxed {
+		background-color: $callout-background-colour;
+		padding: $margin;
+	}
+
+	@include min-screen-width(tablet-portrait) {
+		text-align: left;
+
+
+		.content {
+			margin-bottom: 0;
+			float: left;
+			max-width: 70%;
+
+			&.has-icon {
+				padding-left: 70px;
+				position: relative;
+
+				.callout-icon {
+					@include border-radius(0);
+					font-size: 25px;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+
+		.action {
+			text-align: right;
+			float: right;
+			margin-left: $margin;
+			max-width: 30%;
+
+			.button {
+				margin: 5px 0;
+				width: auto;
+			}
+		}
+	}
+}

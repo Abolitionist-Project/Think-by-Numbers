@@ -1,0 +1,32 @@
+.showbiz-enabled {
+
+	.showbiz {
+
+		ul {
+
+			li {
+				margin-right: $gutter;
+			}
+		}
+	}
+
+	.showbiz-navigation {
+		@include clearfix();
+		margin: 0 -3px 10px -3px;
+
+		a {
+			@include transition(background-color 0.25s);
+			@include icon_style(24px);
+			@include border-radius(4px);
+			font-size: 10px;
+			display: inline-block;
+			margin: 0 3px;
+			background-color: rgba(242,242,242,0.5);
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgb(229,229,229);
+			}
+		}
+	}
+}
