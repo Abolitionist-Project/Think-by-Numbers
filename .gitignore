@@ -1,3 +1,7 @@
+# ignore plugins
+wp-content/plugins/
+wp-content/mu-plugins/
+
 debug.log
 wp-config.php
 files_*.zip.??????
