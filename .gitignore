@@ -2,6 +2,9 @@
 wp-content/plugins/
 wp-content/mu-plugins/
 
+# ignore cache dir
+wp-content/cache/
+
 debug.log
 wp-config.php
 files_*.zip.??????
